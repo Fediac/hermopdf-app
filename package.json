@@ -1,0 +1,143 @@
+{
+  "name": "hermopdf",
+  "productName": "HermoPDF",
+  "version": "1.3.0",
+  "description": "HermoPDF - yerel, ücretsiz PDF düzenleyici",
+  "main": "src/main/main.js",
+  "author": "Fediac",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "start": "electron .",
+    "icons": "electron tools/make-icon.js && node tools/build-icons.js",
+    "test:e2e": "node tests/e2e.js",
+    "dist": "npm run mcpb && electron-builder --win nsis --x64",
+    "test:convert": "node tests/convert.js",
+    "test:claude": "node tests/claude.js",
+    "test:i18n": "node tests/i18n.js",
+    "i18n:check": "node tools/i18n-check.js",
+    "screens": "node tools/app-screens.js",
+    "mcp:build": "node tools/build-mcp.js",
+    "mcpb": "node tools/build-mcpb.js",
+    "test:license": "node tests/license-unit.js && node tests/license.js",
+    "release:manifest": "node tools/release-manifest.mjs"
+  },
+  "build": {
+    "appId": "com.fediac.pdfusta",
+    "productName": "HermoPDF",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "src/**/*",
+      "build/icon.ico",
+      "build/icon-64.png",
+      "build/icon-256.png",
+      "package.json",
+      "!src/mcp/**",
+      "!**/*.map",
+      "!**/*.d.ts",
+      "!**/*.d.mts",
+      "!**/{README,CHANGELOG,readme,changelog}.md",
+      "!node_modules/pdfjs-dist/legacy/**",
+      "!node_modules/pdfjs-dist/types/**",
+      "!node_modules/pdfjs-dist/image_decoders/**",
+      "!node_modules/pdfjs-dist/build/pdf.mjs",
+      "!node_modules/pdfjs-dist/build/pdf.worker.mjs",
+      "!node_modules/pdfjs-dist/build/pdf.sandbox*",
+      "!node_modules/@cantoo/pdf-lib/src/**",
+      "!node_modules/@cantoo/pdf-lib/es/**",
+      "!node_modules/@cantoo/pdf-lib/cjs/**",
+      "!node_modules/@cantoo/pdf-lib/ts3.4/**",
+      "!node_modules/@cantoo/pdf-lib/dist/pdf-lib.js",
+      "!node_modules/@cantoo/pdf-lib/dist/pdf-lib.esm*",
+      "!node_modules/@cantoo/fontkit/src/**",
+      "!node_modules/@cantoo/fontkit/dist/*.cjs",
+      "!node_modules/@cantoo/fontkit/dist/*.mjs",
+      "!node_modules/@cantoo/fontkit/dist/fontkit.umd.js",
+      "!node_modules/tesseract.js/src/**",
+      "!node_modules/tesseract.js-core/tesseract-core.js",
+      "!node_modules/tesseract.js-core/tesseract-core.wasm.js",
+      "!node_modules/tesseract.js-core/tesseract-core-simd.js",
+      "!node_modules/tesseract.js-core/tesseract-core-simd.wasm.js",
+      "!node_modules/tesseract.js-core/tesseract-core-relaxedsimd.js",
+      "!node_modules/tesseract.js-core/tesseract-core-relaxedsimd.wasm.js",
+      "!node_modules/tesseract.js-core/tesseract-core-lstm.js",
+      "!node_modules/tesseract.js-core/tesseract-core-simd-lstm.js",
+      "!node_modules/tesseract.js-core/tesseract-core-relaxedsimd-lstm.js",
+      "!node_modules/@tesseract.js-data/*/4.0.0/**",
+      "!node_modules/docx-preview/dist/docx-preview.js",
+      "!node_modules/docx-preview/dist/docx-preview.mjs",
+      "!node_modules/docx-preview/dist/docx-preview.min.mjs",
+      "!node_modules/docx-preview/dist/*.d.ts",
+      "!node_modules/jszip/lib/**",
+      "!node_modules/jszip/vendor/**",
+      "!node_modules/jszip/dist/jszip.js"
+    ],
+    "extraResources": [
+      {
+        "from": "LICENSE",
+        "to": "legal/LICENSE.txt"
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "to": "legal/THIRD_PARTY_NOTICES.md"
+      },
+      {
+        "from": "dist-mcpb/hermopdf.mcpb",
+        "to": "claude/hermopdf.mcpb"
+      },
+      {
+        "from": "build/mcp/server.cjs",
+        "to": "claude/server.cjs"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico",
+      "fileAssociations": [
+        {
+          "ext": "pdf",
+          "name": "PDF Belgesi",
+          "description": "PDF Belgesi",
+          "icon": "build/icon.ico",
+          "role": "Editor"
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "HermoPDF",
+      "artifactName": "HermoPDF-Setup-${version}.exe",
+      "deleteAppDataOnUninstall": false,
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico"
+    }
+  },
+  "dependencies": {
+    "@cantoo/fontkit": "^2.0.12",
+    "@cantoo/pdf-lib": "^2.11.1",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "@tesseract.js-data/tur": "^1.0.0",
+    "docx-preview": "^0.4.1",
+    "jszip": "^3.10.2",
+    "pdfjs-dist": "^6.3.289",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "@anthropic-ai/mcpb": "^2.1.2",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "docx": "^9.8.1",
+    "electron": "^44.3.0",
+    "electron-builder": "^26.15.3",
+    "esbuild": "^0.28.2",
+    "lucide-static": "^1.46.0",
+    "playwright-core": "^1.63.0",
+    "zod": "^4.6.7"
+  }
+}

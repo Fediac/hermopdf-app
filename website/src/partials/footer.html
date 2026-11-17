@@ -1,0 +1,47 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="{{url:home}}" aria-label="{{t:homeLabel}}">{{> logo}}<span>Hermo<b>PDF</b></span></a>
+      <p>{{t:footTagline}}</p>
+      <p class="muted small">{{t:footMade}}</p>
+    </div>
+    <nav aria-label="{{t:footProduct}}">
+      <h2>{{t:footProduct}}</h2>
+      <ul>
+        <li><a href="{{url:download}}">{{t:linkDownload}}</a></li>
+        <li><a href="{{url:pricing}}">{{t:linkPricing}}</a></li>
+        <li><a href="{{url:compare}}">{{t:linkCompare}}</a></li>
+        <li><a href="{{url:faq}}">{{t:linkFaq}}</a></li>
+        <li><a href="{{url:opensource}}">{{t:linkOpenSource}}</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="{{t:footFeatures}}">
+      <h2>{{t:footFeatures}}</h2>
+      <ul>
+        <li><a href="{{url:compress}}">{{t:featCompress}}</a></li>
+        <li><a href="{{url:edit}}">{{t:featEdit}}</a></li>
+        <li><a href="{{url:ocr}}">{{t:featOcr}}</a></li>
+        <li><a href="{{url:sign}}">{{t:featSign}}</a></li>
+        <li><a href="{{url:redact}}">{{t:featRedact}}</a></li>
+        <li><a href="{{url:batch}}">{{t:featBatch}}</a></li>
+        <li><a href="{{url:word}}">{{t:featWord}}</a></li>
+        <li><a href="{{url:claude}}">{{t:featClaude}}</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="{{t:footHelp}}">
+      <h2>{{t:footHelp}}</h2>
+      <ul>
+        <li><a href="{{url:support}}">{{t:linkSupport}}</a></li>
+        <li><a href="{{url:recover}}">{{t:linkRecover}}</a></li>
+        <li><a href="{{url:privacy}}">{{t:linkPrivacy}}</a></li>
+        <li><a href="{{url:terms}}">{{t:linkTerms}}</a></li>
+        <li><a href="{{url:refund}}">{{t:linkRefund}}</a></li>
+        <li><a href="{{cfg:githubUrl}}" rel="noopener">{{t:footSource}} (GitHub)</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap footer-base">
+    <p>© {{year}} NorthLightPixels · {{t:footTrademark}}</p>
+    <nav class="lang-foot" aria-label="{{t:langNav}}">{{langlinks}}</nav>
+  </div>
+</footer>

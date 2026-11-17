@@ -1,0 +1,83 @@
+<!--meta
+{
+  "title": "HermoPDF İndir: Ücretsiz PDF Programı (Windows 10/11)",
+  "description": "HermoPDF'i resmî kaynağından indir. Sürüm, boyut, SHA-256 özeti ve Windows uyarısı çıkarsa ne yapacağın burada."
+}
+-->
+<section class="page-head">
+  <div class="wrap narrow">
+    <span class="eyebrow">İndir</span>
+    <h1>HermoPDF'i indir</h1>
+    <p class="lead">Ücretsiz. Kurulumdan sonra internetsiz çalışır.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap narrow">
+    <div class="card download-card">
+      <div class="dl-top">
+        <div>
+          <h2 class="h3">Windows için HermoPDF {{cfg:release.version}}</h2>
+          <p class="muted">Yayın tarihi: {{cfg:release.date}} · Kurulum dosyası yaklaşık {{cfg:release.sizeMB}} MB · Windows 10 / 11, 64 bit</p>
+        </div>
+        <a class="btn btn-primary btn-lg btn-stack" href="{{cfg:release.downloadUrl}}" rel="noopener" data-gc="download-click">İndir (.exe)<span class="sub">hermopdf.com üzerinden</span></a>
+      </div>
+      <dl class="facts">
+        <dt>Dosya adı</dt><dd><code>{{cfg:release.fileName}}</code></dd>
+        <dt>SHA-256</dt><dd><code class="hash" id="sha">{{cfg:release.sha256}}</code><button class="btn btn-ghost btn-sm mt-1" type="button" data-copy="sha">Özeti kopyala</button></dd>
+        {{?release.virustotalUrl}}<dt>Virüs taraması</dt><dd><a href="{{cfg:release.virustotalUrl}}" rel="noopener">Bu dosyanın VirusTotal raporu</a></dd>{{/?}}
+        <dt>Kaynak kodu</dt><dd><a href="{{cfg:githubUrl}}" rel="noopener">GitHub'da (GPL-3.0)</a></dd>
+      </dl>
+      <p class="small muted">Yalnız bu siteden indir; başka sitelerdeki kopyalar değiştirilmiş olabilir.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="smartscreen">
+  <div class="wrap narrow">
+    <div class="warn">
+      <h2 id="smartscreen">"Windows kişisel bilgisayarınızı korudu" uyarısı neden çıkıyor?</h2>
+      <p>HermoPDF şu an <strong>kod imzalama sertifikası olmadan</strong> yayımlanıyor; bu sertifikalar bağımsız bir geliştirici için pahalı. SmartScreen, imzasız ve az indirilmiş programlarda uyarı gösterir. Bu "virüs bulundu" değil, "bu dosyayı henüz tanımıyorum" demektir.</p>
+      <h3>Ne yapmalısın?</h3>
+      <ol>
+        <li>Dosyanın bizden geldiğini doğrula (aşağıda).</li>
+        <li>Uyarıda <strong>Ek bilgi</strong>'ye tıkla.</li>
+        <li>Yayımcının "Bilinmeyen yayımcı", dosya adının <code>{{cfg:release.fileName}}</code> olduğunu gör, sonra <strong>Yine de çalıştır</strong>'a bas.</li>
+      </ol>
+      <p class="small">Windows 11'de <strong>Akıllı Uygulama Denetimi</strong> açıksa imzasız programlar hiç çalışmayabilir. Ayarı kapatmanı önermiyoruz; kod imzalı sürümü beklemek daha güvenli. Kod imzalı sürüm planlarımızda öncelikli.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="dogrula">
+  <div class="wrap narrow">
+    <h2 id="dogrula">İndirdiğin dosyayı nasıl doğrularsın?</h2>
+    <ol class="steps">
+      <li><b>Komut istemini aç.</b>Başlat menüsüne <code>cmd</code> yazıp Enter'a bas.</li>
+      <li><b>Şu komutu çalıştır</b>(dosya İndirilenler klasöründeyse):<br><code class="hash" id="certutil">certutil -hashfile "%USERPROFILE%\Downloads\{{cfg:release.fileName}}" SHA256</code><button class="btn btn-ghost btn-sm mt-1" type="button" data-copy="certutil">Komutu kopyala</button></li>
+      <li><b>Çıkan kodu yukarıdaki SHA-256 ile karşılaştır.</b>Harf harf aynıysa dosya bizimdir. Farklıysa çalıştırma, bize yaz.</li>
+    </ol>
+    <p>Antivirüsler imzasız yeni programları bazen yanlışlıkla işaretler; görürsen <a href="{{url:support}}">bize bildir</a>.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="gereksinim">
+  <div class="wrap narrow">
+    <h2 id="gereksinim">Sistem gereksinimleri</h2>
+    <div class="table-wrap">
+      <table>
+        <tbody>
+          <tr><th scope="row">İşletim sistemi</th><td>Windows 10 veya Windows 11, 64 bit (x64)</td></tr>
+          <tr><th scope="row">Disk alanı</th><td>Kurulum için yaklaşık {{cfg:release.installedMB}} MB</td></tr>
+          <tr><th scope="row">İnternet</th><td>Gerekmez.</td></tr>
+          <tr><th scope="row">Microsoft Word</th><td>İsteğe bağlı. Yüklüyse Word → PDF'te kullanılır; yoksa yerleşik motor devreye girer.</td></tr>
+          <tr><th scope="row">Arayüz dili</th><td>Türkçe</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted mt-1">macOS ve Linux sürümü yok. Güncelleme denetimi başlangıçta bir kez sorulur; "Hayır" dersen program kendiliğinden internete bağlanmaz (<a href="{{url:privacy}}">ayrıntılar</a>). Kaldırmak için Windows Ayarlar → Uygulamalar.</p>
+  </div>
+</section>
+
+
+{{> cta}}

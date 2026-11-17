@@ -1,0 +1,95 @@
+<!--meta
+{
+  "title": "Frequently Asked Questions | HermoPDF",
+  "description": "Is HermoPDF really free, where do my files go, what does Pro add, why does Windows show a warning? Short answers."
+}
+-->
+<section class="page-head">
+  <div class="wrap narrow">
+    <span class="eyebrow">FAQ</span>
+    <h1>Frequently asked questions</h1>
+    <p class="lead">Can't find your answer? <a href="{{url:support}}">Write to us</a>.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap narrow">
+    <h2 class="faq-group">General</h2>
+    <details class="faq">
+      <summary>Is HermoPDF really free? What's the catch?</summary>
+      <div class="faq-a"><p>Yes, for everyday PDF work: editing, compressing to a target size, merging, splitting, signing and basic conversions are free, with no watermark, ads, daily limit, trial or account. An optional one-time Lifetime Pro adds OCR, batch processing and saved workflows and funds development.</p></div>
+    </details>
+    <details class="faq">
+      <summary>Which operating systems does it run on?</summary>
+      <div class="faq-a"><p>Windows 10 and 11 (64-bit). There is no macOS, Linux or mobile version.</p></div>
+    </details>
+    <details class="faq">
+      <summary>Does it need an internet connection?</summary>
+      <div class="faq-a"><p>No. The app only goes online if you turn on the optional update check. If you turn on the Claude connection, Claude Desktop uses its own connection; see <a href="{{url:claude}}">Claude connection</a>.</p></div>
+    </details>
+    <details class="faq">
+      <summary>What language is the app in?</summary>
+      <div class="faq-a"><p>The interface is in Turkish. OCR (a Pro feature) recognises Turkish and English text.</p></div>
+    </details>
+
+    <h2 class="faq-group">Privacy and security</h2>
+    <details class="faq">
+      <summary>Are my documents uploaded to a server?</summary>
+      <div class="faq-a"><p>No, everything happens on your computer. The one exception is the Claude connection, if you turn it on: what Claude reads goes to Anthropic. <a href="{{url:claude}}">Details</a></p></div>
+    </details>
+    <details class="faq">
+      <summary>Does the app collect usage data (telemetry)?</summary>
+      <div class="faq-a"><p>No. The update check is opt-in; if you enable it, the app downloads a small signed file from our site at most once a day. Like any web request, this reveals your IP address and the app version. <a href="{{url:privacy}}">Privacy policy</a></p></div>
+    </details>
+    <details class="faq">
+      <summary>Why does Windows say "Windows protected your PC"?</summary>
+      <div class="faq-a"><p>The app is published without a code-signing certificate; it is not a virus warning. Verify the SHA-256 checksum, then click "More info" → "Run anyway". <a href="{{url:download}}">Step-by-step instructions</a></p></div>
+    </details>
+    <details class="faq">
+      <summary>Is redacted text really removed?</summary>
+      <div class="faq-a"><p>Yes. The page becomes a high-resolution (200 DPI) image and the text in the marked area is dropped from the file. <a href="{{url:redact}}">How it works</a></p></div>
+    </details>
+
+    <h2 class="faq-group">Pro and licensing</h2>
+    <details class="faq">
+      <summary>What does Lifetime Pro add? Is it a subscription?</summary>
+      <div class="faq-a"><p>Pro adds OCR (text recognition), batch processing and saved workflows. "Lifetime" means one payment, no subscription, no auto-renewal and no time limit: you keep using the Pro features for life.</p></div>
+    </details>
+    <details class="faq">
+      <summary>Who takes the payment?</summary>
+      <div class="faq-a"><p>Freemius, as Merchant of Record, takes the payment. We never see your card details.</p></div>
+    </details>
+    <details class="faq">
+      <summary>There is a payment on my statement I don't recognise. What is it?</summary>
+      <div class="faq-a"><p>Your HermoPDF payment is taken by Freemius, so your statement may show "FREEMIUS* HERMOPDF" or "FREEMIUS SOFTWARE" instead of our name. Check the receipt e-mail from Freemius; if it matches, that is your purchase. If you still don't recognise it, write to us and we will help (see the <a href="{{url:refund}}">refund policy</a>).</p></div>
+    </details>
+    <details class="faq">
+      <summary>I got a second key and an account from Freemius. Which key do I use?</summary>
+      <div class="faq-a"><p>Freemius may create its own license key and an account (with a temporary password) for you. There are two different keys: the Freemius key, which starts with <code>sk_</code>, is for Freemius's own use, such as recovering your purchase. The key that opens the app is the <strong>HermoPDF license</strong> from our e-mail. Use that one in the app.</p></div>
+    </details>
+    <details class="faq">
+      <summary>My license e-mail didn't arrive.</summary>
+      <div class="faq-a"><p>It is sent once, right after purchase, and can land in your <strong>Spam / Junk</strong> folder; please check there first. If it is not there, use the <a href="{{url:recover}}">Lost my license</a> page to have it sent again.</p></div>
+    </details>
+    <details class="faq">
+      <summary>Can I get a refund?</summary>
+      <div class="faq-a"><p>Yes. A full refund within 14 days of purchase, no questions asked. <a href="{{url:refund}}">Refund policy</a></p></div>
+    </details>
+    <details class="faq">
+      <summary>I lost my license key. What now?</summary>
+      <div class="faq-a"><p>Enter the e-mail you used at checkout on the <a href="{{url:recover}}">Lost my license</a> page; your license is sent to that address again.</p></div>
+    </details>
+    <details class="faq">
+      <summary>Does the license make the app go online?</summary>
+      <div class="faq-a"><p>Activation works offline; the key is verified by its signature. If you enabled the update check, the app downloads a signed list of refunded licenses at most once a week. Your license key and e-mail are not sent; only your IP address and the app version are visible.</p></div>
+    </details>
+
+    <h2 class="faq-group">Open source</h2>
+    <details class="faq">
+      <summary>Why does an open-source program have a paid version?</summary>
+      <div class="faq-a"><p>GPL-3.0 allows paid distribution. Pro is how a single developer keeps the program ad-free and free to use. The code is open to everyone; the "HermoPDF" name and logo are reserved trademarks. <a href="{{url:opensource}}">Details</a></p></div>
+    </details>
+  </div>
+</section>
+
+{{> cta}}

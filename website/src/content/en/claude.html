@@ -1,0 +1,41 @@
+<!--meta
+{
+  "title": "Claude Connection: Optional, Off by Default | HermoPDF",
+  "description": "You can connect HermoPDF to Claude Desktop. It is off by default. If you turn it on, here is exactly what goes to Anthropic."
+}
+-->
+<section class="page-head">
+  <div class="wrap narrow">
+    <span class="eyebrow">Optional · off by default</span>
+    <h1>Claude connection</h1>
+    <p class="lead">If you use Claude Desktop, you can let Claude see your open document: "Where is the payment date?", "Highlight the total on page 3", "Shrink this under 2 MB". It is <strong>completely off</strong> unless you turn it on.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap narrow">
+    <div class="warn">
+      <h2>If you turn it on, what data goes where?</h2>
+      <p>Whatever Claude reads through HermoPDF (<strong>page text, page images, search results, document names</strong>) <strong>goes to Anthropic</strong> inside your own Claude conversation and is subject to <strong>your Claude account terms</strong>. It does not come to us; we cannot see it.</p>
+      <p>For confidential documents, keep the connection off.</p>
+    </div>
+
+    <h2>You stay in control</h2>
+    <ul class="checklist">
+      <li><strong>It cannot save on its own.</strong> The app asks you first.</li>
+      <li><strong>It cannot apply redactions.</strong> It can only mark areas; applying needs your confirmation.</li>
+      <li><strong>Edits can be undone.</strong> Each edit shows up as a normal step; Undo reverts it.</li>
+      <li><strong>Nothing goes to our servers.</strong> The connection runs through a small local server (MCP) on your computer.</li>
+    </ul>
+
+    <h2>How to turn it on (the connection is free)</h2>
+    <ol class="steps">
+      <li><b>Install Claude Desktop and sign in.</b>Claude usage counts against <strong>your own Claude plan</strong>.</li>
+      <li><b>In the Araçlar (Tools) tab, click "Claude'a bağla" (Connect to Claude).</b>Accept the window explaining what will be shared and the connection is set up.</li>
+      <li><b>Turn it off any time.</b>Click the Claude indicator in the app.</li>
+    </ol>
+    <p class="small muted">Claude is a product of Anthropic. HermoPDF is not affiliated with or endorsed by Anthropic.</p>
+  </div>
+</section>
+
+{{> cta}}

@@ -1,0 +1,105 @@
+<!--meta
+{
+  "title": "PDF Küçültme Programı: Hedef Boyuta İndir | HermoPDF",
+  "ogTitle": "Başvuru sitesi PDF'ini kabul etmiyor mu? İstenen boyutu yaz.",
+  "description": "PDF'i 1 MB, 500 KB ya da 200 KB altına indir. Küçültme kendi bilgisayarında yapılır; filigran ve hesap yok. Windows için ücretsiz program."
+}
+-->
+<section class="hero hero-sm">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">PDF küçültme programı · hedef boyut</span>
+      <h1>Başvuru sitesi PDF'ini <span class="hl">kabul etmiyor mu?</span></h1>
+      <p class="lead"><strong>İstenen boyutu yaz; belgen bir siteye yüklenmeden, kendi bilgisayarında küçülsün.</strong> Program en hafif ayardan başlar, hedefi tutturduğu ilk ayarda durur.</p>
+      <div class="actions">
+        <a class="btn btn-primary btn-lg btn-stack" href="{{url:download}}" data-gc="compress-download">{{t:ctaDownload}}<span class="sub">{{t:ctaDownloadSub}}</span></a>
+        <a class="btn btn-ghost btn-lg" href="#nasil">Nasıl çalışır?</a>
+      </div>
+      <ul class="pill-row" aria-label="Kısaca">
+        <li class="pill">İnternete yükleme yok</li>
+        <li class="pill">Filigran yok</li>
+        <li class="pill">Gün sınırı yok</li>
+      </ul>
+    </div>
+    <div>{{shot:kucultme-dialog>kucultme-hedef|HermoPDF'in "PDF küçült" penceresi: şu anki boyut 635,7 KB, "Hedef boyut (MB)" kutusunda 0,2 yazıyor; 1 MB, 2 MB, 5 MB, 10 MB (e-posta) ve %50 hazır düğmeleri}}</div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="sahne">
+  <div class="wrap narrow">
+    <span class="eyebrow">Tanıdık bir sahne</span>
+    <h2 id="sahne">Son gün, tek bir uyarı</h2>
+    <p>Başvurunun son adımı: <em>"Dosya boyutu en fazla 1 MB olmalıdır."</em> Seninki daha büyük. Çoğu "PDF küçült" sitesi de diplomanı, kimliğini kendi sunucusuna yüklemeni ister.</p>
+    <p>Boyut sınırı her yerde karşına çıkar: e-posta servisleri ek boyutunu sınırlar (örneğin Gmail'de ileti başına 25 MB; kodlama bu payın bir kısmını yer). İş, okul ve vize başvuru formları, sınav kayıtları ve ihale sistemleri çoğu zaman dosya başına birkaç MB'a, bazen daha azına izin verir. PDF'i büyüten genellikle taranmış sayfalardır, çünkü her sayfa bir görüntü olarak saklanır.</p>
+    <div class="okbox">
+      <p><strong>HermoPDF'te:</strong> belgeyi aç, <strong>Küçült</strong>'e bas, <strong>1</strong> yaz. Gerisini program bulur; internet bile gerekmez.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="nasil" aria-labelledby="nasil-baslik">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Nasıl çalışır?</span>
+      <h2 id="nasil-baslik">Dört adım, deneme yanılma yok</h2>
+      <ol class="steps">
+        <li><b>PDF'i aç, Küçült'e bas.</b>Araçlar sekmesi, "Boyut" grubu.</li>
+        <li><b>Hedefi MB olarak yaz.</b>1, 2, 5 ve 10 MB hazır; 500 KB için <code>0,5</code>, yaklaşık 200 KB için <code>0,2</code>.</li>
+        <li><b>Program kademeleri dener.</b>Yazılar olduğu gibi kalır; görseller yaklaşık 220 DPI'dan 72 DPI'ya kadar sıkıştırılır. Hedefe inince durur.</li>
+        <li><b>Önce / sonra boyutu gör.</b>Küçük kopya yeni dosya olur; orijinal korunur.</li>
+      </ol>
+    </div>
+    <div>
+      {{shot:kucultme-sonuc|Küçültme tamamlandı penceresi: önceki ve sonraki dosya boyutu yan yana, yüzde kaç küçüldüğü ve kayıt yeri}}
+      {{numbers}}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="durust">
+  <div class="wrap narrow">
+    <span class="eyebrow">Dürüst notlar</span>
+    <h2 id="durust">Bilmen gereken üç şey</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1. Çok küçük hedef, okunurluğu düşürebilir</h3>
+        <p>Taranmış belgeyi 200 KB'a indirirken yazı bulanıklaşabilir. Kaydettikten sonra yakınlaştırıp kontrol et; gerekirse biraz büyük bir hedef dene.</p>
+      </div>
+      <div class="card">
+        <h3>2. Hedefe her zaman inilemeyebilir</h3>
+        <p>Program bunu açıkça söyler ve ulaşabildiği en küçük boyutu verir.</p>
+      </div>
+      <div class="card">
+        <h3>3. Sınırı yükleyeceğin yerden kontrol et</h3>
+        <p>Kimi dosya başına, kimi toplama bakar. Pay bırak: sınır 2 MB ise 1,8 yaz.</p>
+      </div>
+    </div>
+    <p class="small muted mt-1">Gerekirse son çare olarak "tarama modu" sayfaları görüntüye çevirir: metin seçimi korunur, bağlantılar kaybolabilir. Bağlantılar önemliyse bu izni kapat.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="ekstra">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="ekstra">Biraz daha küçültmek için</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card"><span class="ico">{{> ico-shrink}}</span><h3>Gri tonlama</h3><p>Renk gerekmiyorsa görselleri griye çevir.</p></div>
+      <div class="card"><span class="ico">{{> ico-pages}}</span><h3>Meta veri temizliği</h3><p>Gömülü küçük resimler silinir. Varsayılan olarak açık.</p></div>
+      <div class="card"><span class="ico">{{> ico-batch}}</span><h3>Çok dosya mı var?</h3><p><a href="{{url:batch}}">Toplu işlemde</a> hepsine aynı hedefi uygula.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="kucult-sss">
+  <div class="wrap narrow">
+    <h2 id="kucult-sss">PDF küçültme hakkında sorular</h2>
+    <details class="faq"><summary>PDF'i 1 MB altına nasıl düşürürüm?</summary><div class="faq-a"><p>Dosyayı aç, Araçlar sekmesinde <strong>Küçült</strong>'e bas, hedefe <code>1</code> yaz (ya da "1 MB"ye bas) ve onayla. Sonuç yeni dosya olarak kaydedilir.</p></div></details>
+    <details class="faq"><summary>PDF'i 200 KB ya da 500 KB yapabilir miyim?</summary><div class="faq-a"><p>Evet: 500 KB için <code>0,5</code>, yaklaşık 200 KB için <code>0,2</code> yaz. Bu kadar küçük hedeflerde okunurluğu kontrol et.</p></div></details>
+    <details class="faq"><summary>Dosyam internete yükleniyor mu?</summary><div class="faq-a"><p>Hayır. Küçültme tamamen bilgisayarında yapılır; internet kapalıyken de çalışır.</p></div></details>
+    <details class="faq"><summary>Ücretli mi? Filigran ekliyor mu?</summary><div class="faq-a"><p>Hayır. Ücretsiz sürümde var; filigran, gün ya da dosya sınırı yok.</p></div></details>
+    <details class="faq"><summary>Birkaç belgeyi birleştirip sonra küçültebilir miyim?</summary><div class="faq-a"><p>Evet: önce <strong>Birleştir</strong>, sonra <strong>Küçült</strong>. Çok dosyan varsa <a href="{{url:batch}}">toplu işlem</a> hepsine aynı hedefi uygular.</p></div></details>
+  </div>
+</section>
+
+{{> cta}}

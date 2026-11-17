@@ -1,0 +1,128 @@
+<!--meta
+{
+  "title": "Free Offline PDF Editor for Windows, No Account | HermoPDF",
+  "ogTitle": "HermoPDF: You own your PDFs.",
+  "description": "Edit, sign, merge and compress a PDF to 1 MB on your own PC, free. OCR and batch processing with Pro. No account, no ads, no subscription. GPL-3.0."
+}
+-->
+<section class="sky" id="hermes" aria-labelledby="sky-title" {{> hermes-data}}>
+  {{> hermes-stage}}
+  <div class="wrap sky-inner">
+    <div class="sky-top">
+      <div class="sky-text">
+        <span class="eyebrow">A free PDF editor for Windows</span>
+        <h1 id="sky-title">You own <span class="hl">your PDFs.</span></h1>
+        <p class="lead"><strong>No subscription. No ads. Your PDF work happens on your own computer.</strong></p>
+      </div>
+      <div class="sky-cta">
+        <a class="btn btn-primary btn-lg btn-stack sky-dl" href="{{dlhref}}" data-gc="hero-download">{{t:ctaDownload}}<span class="sub">{{t:ctaDownloadSub}}</span></a>
+      </div>
+    </div>
+    <div class="sky-more">
+      <ul class="pill-row" aria-label="In short">
+        <li class="pill">No account</li>
+        <li class="pill">No card</li>
+        <li class="pill">No ads</li>
+        <li class="pill">No watermark</li>
+        <li class="pill">Open source</li>
+      </ul>
+      <p class="hero-meta">Version {{cfg:release.version}} · Windows 10 / 11 (64-bit) · Works offline · App interface: Turkish · <a href="{{url:download}}">Install and verify</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section hook-sec" aria-labelledby="hook-title">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Compress to a target size</span>
+      <h2 id="hook-title">“File too large” for an email or upload form?</h2>
+      <p class="lead">Email attachments, application forms and exam or tender systems all have size limits. Type the limit and shrink the PDF on your own computer. No upload, no queue.</p>
+      <div class="actions"><a class="btn btn-ghost" href="{{url:compress}}">Target-size compression →</a></div>
+    </div>
+    <div class="hero-art">
+      {{sizedemo}}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What can you do?</span>
+      <h2 id="features-title">Every everyday PDF job, in one program</h2>
+      <p class="lead">Everyday PDF work is free, with no daily or page limit. OCR and batch processing come with Pro.</p>
+    </div>
+    <div class="grid grid-4 feat-grid">
+      <a class="card card-link" href="{{url:compress}}"><span class="ico">{{> ico-shrink}}</span><h3>Compress to a target size</h3><p>Type the limit; the app finds the right setting.</p><span class="more">Compress PDF →</span></a>
+      <a class="card card-link" href="{{url:edit}}"><span class="ico">{{> ico-edit}}</span><h3>Edit</h3><p>Fix existing text; add text, images and notes.</p><span class="more">Editing →</span></a>
+      <a class="card card-link" href="{{url:ocr}}"><span class="ico">{{> ico-ocr}}</span><h3>OCR <span class="tag tag-pro">Pro</span></h3><p>Turn scanned pages into searchable text.</p><span class="more">OCR →</span></a>
+      <a class="card card-link" href="{{url:sign}}"><span class="ico">{{> ico-sign}}</span><h3>Sign</h3><p>Draw it once, place it on any document in one click.</p><span class="more">Signing →</span></a>
+      <a class="card card-link" href="{{url:redact}}"><span class="ico">{{> ico-redact}}</span><h3>True redaction</h3><p>ID numbers, IBANs… Redacted text leaves the file.</p><span class="more">Redaction →</span></a>
+      <a class="card card-link" href="{{url:batch}}"><span class="ico">{{> ico-batch}}</span><h3>Batch processing <span class="tag tag-pro">Pro</span></h3><p>Watermark, number or compress dozens of files at once.</p><span class="more">Batch →</span></a>
+      <a class="card card-link" href="{{url:word}}"><span class="ico">{{> ico-word}}</span><h3>Word → PDF</h3><p>Uses Word if installed, otherwise a built-in engine.</p><span class="more">Word → PDF →</span></a>
+      <a class="card card-link" href="{{url:claude}}"><span class="ico">{{> ico-claude}}</span><h3>Claude connection</h3><p>Turn it on if you want; off by default.</p><span class="more">How it works →</span></a>
+    </div>
+    <div class="note mt-2">
+      <p><strong>Also:</strong> merge, split, reorder, rotate, delete pages · passwords · fill forms · images to PDF · PDF to Word and images · print.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="compress-title">
+  <div class="wrap split split-shot">
+    <div>
+      <span class="eyebrow">The headline feature</span>
+      <h2 id="compress-title">Target-size compression in 3 steps</h2>
+      <ol class="steps">
+        <li><b>Open the PDF, click "Compress".</b></li>
+        <li><b>Type the target.</b>1, 2, 5 and 10 MB are one click; for 500 KB type 0.5.</li>
+        <li><b>See the before / after size.</b>Your original stays untouched.</li>
+      </ol>
+      <p><a href="{{url:compress}}">How does it work? →</a></p>
+    </div>
+    <div>
+      {{demo:kucultme|kucultme-dialog>kucultme-hedef|The HermoPDF compress window (interface in Turkish): current size 635.7 KB, 0.2 typed in the target size box, and one-click 1 MB, 2 MB, 5 MB, 10 MB (email) and 50% buttons|The app's own compress window (interface in Turkish).}}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="compare-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">An honest comparison</span>
+      <h2 id="compare-title">What do you want? What do others offer? What do we do?</h2>
+    </div>
+    <div class="ask-list">
+      <div class="ask-head" aria-hidden="true"><div>What do you want?</div><div>What do others offer?</div><div class="us">What do we do?</div></div>
+      <div class="ask"><div><span class="ask-h">What do you want?</span><p>To edit and sign without a subscription.</p></div><div><span class="ask-h">What do others offer?</span><p>Adobe Acrobat Standard: from US$14.99/month in the US (annual plan).</p></div><div class="us"><span class="ask-h">What do we do?</span><p>Editing and signing are free. Pro is one-time.</p></div></div>
+      <div class="ask"><div><span class="ask-h">What do you want?</span><p>To get under an email or upload size limit.</p></div><div><span class="ask-h">What do others offer?</span><p>Pick a level and retry until it fits.</p></div><div class="us"><span class="ask-h">What do we do?</span><p>You type the target; the app stops at the first setting that fits.</p></div></div>
+      <div class="ask"><div><span class="ask-h">What do you want?</span><p>A free, offline program.</p></div><div><span class="ask-h">What do others offer?</span><p>PDF24 Creator and KillerPDF are too; both are good.</p></div><div class="us"><span class="ask-h">What do we do?</span><p>Target size, a Turkish-first interface, dual-engine Word → PDF. OCR and batch processing with Pro.</p></div></div>
+    </div>
+    <p class="small muted mt-1">Competitor details were read from official pages on {{date:compareDate}}; they can change. <a href="{{url:compare}}">Full comparison with sources →</a></p>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="model-title">
+  <div class="wrap">
+    <div class="grid grid-2 items-center">
+      <div>
+        <span class="eyebrow">The business model, in plain words</span>
+        <h2 id="model-title">Everyday PDF work is free.</h2>
+        <p>Reading, editing, compressing to a target size, merging, splitting, signing and basic conversions are free. If you want, a one-time <strong>Lifetime Pro</strong> adds <strong>OCR, batch processing and saved workflows</strong> and supports development.</p>
+        <div class="actions"><a class="btn btn-ghost" href="{{url:pricing}}">Compare free and Pro</a></div>
+      </div>
+      <div class="card">
+        <h3>Why you can trust it</h3>
+        <ul class="checklist">
+          <li>Open source code (GPL-3.0).</li>
+          <li>No telemetry; the update check is opt-in.</li>
+          <li>License activation works offline.</li>
+          <li>Every release's SHA-256 checksum is on the download page.</li>
+        </ul>
+        <p class="small"><a href="{{url:privacy}}">Privacy policy</a> · <a href="{{url:opensource}}">Open source &amp; license</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

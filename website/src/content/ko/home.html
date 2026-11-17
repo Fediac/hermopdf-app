@@ -1,0 +1,128 @@
+<!--meta
+{
+  "title": "Windows용 무료 오프라인 PDF 편집기, 계정 불필요 | HermoPDF",
+  "ogTitle": "HermoPDF: PDF는 여러분의 것이에요.",
+  "description": "PDF 편집, 서명, 병합, 1 MB로 압축을 내 컴퓨터에서 무료로 할 수 있어요. OCR과 일괄 처리는 Pro에서 쓸 수 있어요. 계정도 광고도 구독도 없는 오픈 소스(GPL-3.0) 프로그램이에요."
+}
+-->
+<section class="sky" id="hermes" aria-labelledby="sky-title" {{> hermes-data}}>
+  {{> hermes-stage}}
+  <div class="wrap sky-inner">
+    <div class="sky-top">
+      <div class="sky-text">
+        <span class="eyebrow">Windows용 무료 PDF 편집기</span>
+        <h1 id="sky-title"><span class="hl">PDF는</span> 여러분의 것이에요.</h1>
+        <p class="lead"><strong>구독도 광고도 없어요. PDF 작업은 여러분의 컴퓨터에서 이루어져요.</strong></p>
+      </div>
+      <div class="sky-cta">
+        <a class="btn btn-primary btn-lg btn-stack sky-dl" href="{{dlhref}}" data-gc="hero-download">{{t:ctaDownload}}<span class="sub">{{t:ctaDownloadSub}}</span></a>
+      </div>
+    </div>
+    <div class="sky-more">
+      <ul class="pill-row" aria-label="한눈에 보기">
+        <li class="pill">계정 없음</li>
+        <li class="pill">카드 없음</li>
+        <li class="pill">광고 없음</li>
+        <li class="pill">워터마크 없음</li>
+        <li class="pill">오픈 소스</li>
+      </ul>
+      <p class="hero-meta">버전 {{cfg:release.version}} · Windows 10 / 11 (64비트) · 오프라인에서 작동 · 앱 화면: 터키어 · <a href="{{url:download}}">설치 및 확인</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section hook-sec" aria-labelledby="hook-title">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">목표 크기로 압축</span>
+      <h2 id="hook-title">이메일이나 업로드 양식에서 “파일이 너무 커요”라고 하나요?</h2>
+      <p class="lead">이메일 첨부, 신청서 양식, 시험이나 입찰 시스템에는 모두 크기 제한이 있어요. 제한 크기를 입력하면 내 컴퓨터에서 PDF를 줄일 수 있어요. 업로드도 대기열도 없어요.</p>
+      <div class="actions"><a class="btn btn-ghost" href="{{url:compress}}">목표 크기 압축 →</a></div>
+    </div>
+    <div class="hero-art">
+      {{sizedemo}}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">무엇을 할 수 있나요?</span>
+      <h2 id="features-title">일상적인 PDF 작업을 프로그램 하나로</h2>
+      <p class="lead">일상적인 PDF 작업은 무료이고 하루 사용 횟수나 페이지 수 제한도 없어요. OCR과 일괄 처리는 Pro로 쓸 수 있어요.</p>
+    </div>
+    <div class="grid grid-4 feat-grid">
+      <a class="card card-link" href="{{url:compress}}"><span class="ico">{{> ico-shrink}}</span><h3>목표 크기로 압축</h3><p>제한 크기를 입력하면 앱이 알맞은 설정을 찾아요.</p><span class="more">PDF 압축 →</span></a>
+      <a class="card card-link" href="{{url:edit}}"><span class="ico">{{> ico-edit}}</span><h3>편집</h3><p>기존 텍스트를 고치고, 텍스트·이미지·메모를 추가해요.</p><span class="more">편집 →</span></a>
+      <a class="card card-link" href="{{url:ocr}}"><span class="ico">{{> ico-ocr}}</span><h3>OCR <span class="tag tag-pro">Pro</span></h3><p>스캔한 페이지를 검색 가능한 텍스트로 바꿔요.</p><span class="more">OCR →</span></a>
+      <a class="card card-link" href="{{url:sign}}"><span class="ico">{{> ico-sign}}</span><h3>서명</h3><p>한 번만 그려 두면 어떤 문서에든 한 번에 넣을 수 있어요.</p><span class="more">서명 →</span></a>
+      <a class="card card-link" href="{{url:redact}}"><span class="ico">{{> ico-redact}}</span><h3>진짜 가림 처리</h3><p>신분증 번호, IBAN 등. 가린 텍스트는 파일에서 사라져요.</p><span class="more">가림 처리 →</span></a>
+      <a class="card card-link" href="{{url:batch}}"><span class="ico">{{> ico-batch}}</span><h3>일괄 처리 <span class="tag tag-pro">Pro</span></h3><p>수십 개의 파일에 워터마크나 페이지 번호를 넣거나 한꺼번에 압축해요.</p><span class="more">일괄 처리 →</span></a>
+      <a class="card card-link" href="{{url:word}}"><span class="ico">{{> ico-word}}</span><h3>Word → PDF</h3><p>Word가 설치되어 있으면 Word를 쓰고, 없으면 내장 엔진을 써요.</p><span class="more">Word → PDF →</span></a>
+      <a class="card card-link" href="{{url:claude}}"><span class="ico">{{> ico-claude}}</span><h3>Claude 연결</h3><p>원할 때만 켜세요. 기본값은 꺼짐이에요.</p><span class="more">작동 방식 →</span></a>
+    </div>
+    <div class="note mt-2">
+      <p><strong>그 밖에도:</strong> 병합, 분할, 순서 바꾸기, 회전, 페이지 삭제 · 암호 · 양식 작성 · 이미지를 PDF로 · PDF를 Word와 이미지로 · 인쇄.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="compress-title">
+  <div class="wrap split split-shot">
+    <div>
+      <span class="eyebrow">대표 기능</span>
+      <h2 id="compress-title">목표 크기 압축, 3단계면 끝나요</h2>
+      <ol class="steps">
+        <li><b>PDF를 열고 "압축"을 클릭하세요.</b></li>
+        <li><b>목표 크기를 입력하세요.</b>1, 2, 5, 10 MB는 한 번에 선택할 수 있고, 500 KB는 0.5를 입력하면 돼요.</li>
+        <li><b>압축 전후 크기를 확인하세요.</b>원본은 그대로 남아 있어요.</li>
+      </ol>
+      <p><a href="{{url:compress}}">어떻게 작동하나요? →</a></p>
+    </div>
+    <div>
+      {{demo:kucultme|kucultme-dialog>kucultme-hedef|HermoPDF 압축 창(화면은 터키어): 현재 크기 635.7 KB, 목표 크기 입력란에 0.2가 입력되어 있고, 1 MB, 2 MB, 5 MB, 10 MB(이메일), 50% 버튼이 한 번에 선택할 수 있도록 놓여 있음|앱 자체의 압축 창(화면은 터키어).}}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="compare-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">솔직한 비교</span>
+      <h2 id="compare-title">여러분은 무엇을 원하나요? 다른 곳은 무엇을 제공하나요? 우리는 무엇을 하나요?</h2>
+    </div>
+    <div class="ask-list">
+      <div class="ask-head" aria-hidden="true"><div>여러분은 무엇을 원하나요?</div><div>다른 곳은 무엇을 제공하나요?</div><div class="us">우리는 무엇을 하나요?</div></div>
+      <div class="ask"><div><span class="ask-h">여러분은 무엇을 원하나요?</span><p>구독 없이 편집하고 서명하고 싶어요.</p></div><div><span class="ask-h">다른 곳은 무엇을 제공하나요?</span><p>Adobe Acrobat Standard: 미국 기준 월 US$14.99부터 (연간 요금제).</p></div><div class="us"><span class="ask-h">우리는 무엇을 하나요?</span><p>편집과 서명은 무료예요. Pro는 한 번만 결제해요.</p></div></div>
+      <div class="ask"><div><span class="ask-h">여러분은 무엇을 원하나요?</span><p>이메일이나 업로드 크기 제한 안으로 줄이고 싶어요.</p></div><div><span class="ask-h">다른 곳은 무엇을 제공하나요?</span><p>수준을 고르고, 맞을 때까지 다시 시도해요.</p></div><div class="us"><span class="ask-h">우리는 무엇을 하나요?</span><p>목표 크기를 입력하면 앱이 맞는 첫 번째 설정에서 멈춰요.</p></div></div>
+      <div class="ask"><div><span class="ask-h">여러분은 무엇을 원하나요?</span><p>무료로 쓸 수 있는 오프라인 프로그램이요.</p></div><div><span class="ask-h">다른 곳은 무엇을 제공하나요?</span><p>PDF24 Creator와 KillerPDF도 그래요. 둘 다 좋은 프로그램이에요.</p></div><div class="us"><span class="ask-h">우리는 무엇을 하나요?</span><p>목표 크기 압축, 터키 사용자를 먼저 생각한 화면, 이중 엔진 Word → PDF. OCR과 일괄 처리는 Pro에서.</p></div></div>
+    </div>
+    <p class="small muted mt-1">경쟁 제품 정보는 {{date:compareDate}}에 공식 페이지에서 확인했어요. 바뀔 수 있어요. <a href="{{url:compare}}">출처가 있는 전체 비교 →</a></p>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="model-title">
+  <div class="wrap">
+    <div class="grid grid-2 items-center">
+      <div>
+        <span class="eyebrow">비즈니스 모델을 쉬운 말로</span>
+        <h2 id="model-title">일상적인 PDF 작업은 무료예요.</h2>
+        <p>읽기, 편집, 목표 크기로 압축, 병합, 분할, 서명, 기본 변환은 무료예요. 원하신다면 한 번만 결제하는 <strong>Lifetime Pro</strong>로 <strong>OCR, 일괄 처리, 워크플로 저장</strong>을 쓰고 개발을 응원할 수 있어요.</p>
+        <div class="actions"><a class="btn btn-ghost" href="{{url:pricing}}">무료와 Pro 비교</a></div>
+      </div>
+      <div class="card">
+        <h3>믿을 수 있는 이유</h3>
+        <ul class="checklist">
+          <li>소스 코드 공개(GPL-3.0).</li>
+          <li>원격 측정 없음. 업데이트 확인은 직접 켜야 해요.</li>
+          <li>라이선스 인증은 오프라인에서 돼요.</li>
+          <li>모든 릴리스의 SHA-256 체크섬이 다운로드 페이지에 있어요.</li>
+        </ul>
+        <p class="small"><a href="{{url:privacy}}">개인정보 처리방침</a> · <a href="{{url:opensource}}">오픈 소스 및 라이선스</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

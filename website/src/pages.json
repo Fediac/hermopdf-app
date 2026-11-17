@@ -1,0 +1,25 @@
+{
+  "_note": "Sayfa kaydı. tr: Türkçe adres parçası (/tr öneki build'te eklenir), en: diğer bütün dillerin adres parçası (İngilizce kökte, öbür diller kendi önekiyle: /es/download/ gibi). İçerik: src/content/<dil>/<id>.html. Adres değişirse build.mjs'deki yönlendirmelere 301 ekle.",
+  "pages": {
+    "home":        { "tr": "/",                          "en": "/",                         "priority": 1.0, "scripts": ["hermes", "demo"] },
+    "download":    { "tr": "/indir/",                    "en": "/download/",                "priority": 0.9 },
+    "pricing":     { "tr": "/fiyat/",                    "en": "/pricing/",                 "priority": 0.8, "scripts": ["checkout"], "checkout": true },
+    "compress":    { "tr": "/pdf-kucultme/",             "en": "/compress-pdf-to-1mb/",     "priority": 0.9 },
+    "ocr":         { "tr": "/taranmis-pdf-ocr/",         "en": "/ocr-scanned-pdf/",         "priority": 0.7 },
+    "edit":        { "tr": "/pdf-duzenleme-programi/",   "en": "/offline-pdf-editor/",      "priority": 0.8 },
+    "sign":        { "tr": "/pdf-imza-ekleme/",          "en": "/sign-pdf/",                "priority": 0.7 },
+    "redact":      { "tr": "/pdf-karartma/",             "en": "/redact-pdf/",              "priority": 0.7 },
+    "batch":       { "tr": "/toplu-pdf-islemleri/",      "en": "/batch-pdf-processing/",    "priority": 0.7 },
+    "word":        { "tr": "/word-pdf-donusturme/",      "en": "/word-to-pdf/",             "priority": 0.7 },
+    "claude":      { "tr": "/claude-baglantisi/",        "en": "/claude-connection/",       "priority": 0.5 },
+    "compare":     { "tr": "/karsilastirma/",            "en": "/compare/",                 "priority": 0.7 },
+    "faq":         { "tr": "/sss/",                      "en": "/faq/",                     "priority": 0.6, "faqSchema": true },
+    "support":     { "tr": "/destek/",                   "en": "/support/",                 "priority": 0.5 },
+    "opensource":  { "tr": "/acik-kaynak/",              "en": "/open-source/",             "priority": 0.5 },
+    "privacy":     { "tr": "/gizlilik/",                 "en": "/privacy/",                 "priority": 0.4, "legal": true },
+    "terms":       { "tr": "/kullanim-kosullari/",       "en": "/terms/",                   "priority": 0.3, "legal": true },
+    "refund":      { "tr": "/iade-politikasi/",          "en": "/refund-policy/",           "priority": 0.3, "legal": true },
+    "recover":     { "tr": "/lisansimi-kaybettim/",      "en": "/recover-license/",         "priority": 0.3, "scripts": ["claim", "recover"] },
+    "success":     { "tr": "/satin-alma-tamamlandi/",    "en": "/purchase-complete/",       "noindex": true, "scripts": ["claim"] }
+  }
+}

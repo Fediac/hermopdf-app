@@ -1,0 +1,67 @@
+<!--meta
+{
+  "title": "Lisansımı Kaybettim | HermoPDF",
+  "description": "HermoPDF Pro anahtarını mı kaybettin ya da Freemius sayfasından mı aldın? Freemius lisans anahtarını yapıştır, HermoPDF anahtarını hemen al."
+}
+-->
+<section class="page-head">
+  <div class="wrap narrow">
+    <span class="eyebrow">Lisans</span>
+    <h1>Lisansımı kaybettim</h1>
+    <p class="lead">HermoPDF anahtarını burada yeniden alabilirsin. Freemius'un kendi ödeme sayfasından satın aldıysan anahtarını da buradan alırsın; o sayfa seni sitemize geri getirmez.</p>
+  </div>
+</section>
+
+<section class="section-tight" aria-labelledby="fs-anahtar">
+  <div class="wrap narrow">
+    <h2 id="fs-anahtar" class="h3">Freemius lisans anahtarınla hemen al</h2>
+    <p class="warn" id="claim-demo" hidden></p>
+    <div class="card" id="claim" aria-live="polite">
+      <div id="claim-wait" hidden>
+        <p><span class="spinner" aria-hidden="true"></span> <span id="claim-wait-text">HermoPDF lisans anahtarın hazırlanıyor…</span></p>
+      </div>
+
+      <form class="form" id="claim-form" novalidate>
+        <p class="status" id="claim-form-msg" role="status"></p>
+        <label for="claim-fskey">Freemius lisans anahtarın
+          <input class="input" id="claim-fskey" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+        </label>
+        <p class="small muted">Bu anahtarı ödemeyi alan Freemius verir; satın almadan sonra Freemius'tan gelen e-postalarına bak. Freemius anahtarı HermoPDF'te doğrudan çalışmaz, burada senin HermoPDF anahtarına çevrilir. Freemius anahtarının kendisini saklamayız. İade edilen ya da iptal edilen satın almalara anahtar verilmez.</p>
+        <div><button class="btn btn-primary" type="submit">HermoPDF anahtarımı göster</button></div>
+      </form>
+
+      <div id="claim-ok" hidden tabindex="-1">
+        <h2 class="h3">HermoPDF lisans anahtarın hazır</h2>
+        <div class="warn"><p><strong>Anahtarı şimdi kaydet.</strong> Kopyala ya da lisans dosyasını indir ve güvenli bir yerde sakla.</p></div>
+        <div class="key-box" id="claim-key"></div>
+        <div class="copy-row">
+          <button class="btn btn-primary" type="button" data-copy="claim-key">Anahtarı kopyala</button>
+          <a class="btn btn-ghost" id="claim-dl" href="#" download>Lisans dosyasını indir</a>
+        </div>
+        <p class="small muted mt-1">Dosya adı: <code id="claim-file-name">hermopdf-pro.hermopdflicense</code></p>
+        <p class="small muted" id="claim-email-row" hidden>Anahtar şu e-posta adresine bağlı: <strong id="claim-email"></strong></p>
+        <p class="small">Etkinleştirmek için: HermoPDF'te taçlı <strong>Pro</strong> düğmesi, sonra <strong>Lisansım var</strong>; anahtarı yapıştır ya da <strong>Dosyadan yükle</strong> ile dosyayı seç, <strong>Etkinleştir</strong>'e bas. Program kurulu değilse <a href="{{url:download}}">buradan indir</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" aria-labelledby="eposta-yolu">
+  <div class="wrap narrow">
+    <h2 id="eposta-yolu" class="h3">Ya da e-postayla iste</h2>
+    <div class="card">
+      <form class="form" id="recover-form" novalidate>
+        <p>Satın alırken kullandığın e-postayı yaz; etkin bir Lifetime Pro lisansı varsa HermoPDF anahtarını o adrese göndeririz.</p>
+        <label for="recover-email">E-posta adresin
+          <input class="input" id="recover-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="ornek@eposta.com">
+        </label>
+        <div><button class="btn btn-primary" type="submit">Lisansımı e-postayla gönder</button></div>
+        <p class="status" id="recover-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="note">
+      <p><strong>Gizliliğin için:</strong> bir adrese kayıtlı lisans olup olmadığını söylemeyiz; her durumda aynı mesajı görürsün. E-posta gelmezse spam klasörüne bak.</p>
+      <p>Yine olmadıysa Freemius'tan gelen satın alma e-postasıyla birlikte <a href="mailto:{{cfg:contactEmail}}">{{cfg:contactEmail}}</a> adresine yaz.</p>
+    </div>
+  </div>
+</section>

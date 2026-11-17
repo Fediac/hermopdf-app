@@ -1,0 +1,52 @@
+{
+  "_note": "Tek yapılandırma yeri (bkz. website/README.md). İçinde PLACEHOLDER geçen bir değer kalırsa sitede 'Önizleme' şeridi görünür.",
+  "siteName": "HermoPDF",
+  "siteUrl": "https://hermopdf.com",
+  "apiBase": "https://api.hermopdf.com",
+  "devApiBase": "http://127.0.0.1:8787",
+  "githubUrl": "https://github.com/Fediac/hermopdf-app",
+  "contactEmail": "northlightstudios25@gmail.com",
+  "goatcounter": "",
+  "freemius": {
+    "_note": "publicKey herkese açıktır (sır değil). Gizli anahtar siteye ASLA girmez. checkoutEnabled false iken satın al düğmesi 'yakında' gösterir ve Freemius betiği hiç yüklenmez.",
+    "checkoutEnabled": true,
+    "productId": 45325,
+    "planId": 79873,
+    "pricingId": 120529,
+    "couponTR": "TR399",
+    "_noteCouponTR": "TR399: Freemius kuponu, sabit 3 USD indirim (6,99 -> 3,99), kişi başı 1, toplam 500 kullanım, süresiz. Yalnız Türkçe sayfadaki Freemius ödeme penceresinde otomatik uygulanır (coupon + hide_coupon).",
+    "publicKey": "pk_f55f97f192756948c87d97fdae488"
+  },
+  "pro": {
+    "_note": "Pro fiyatı TEK yerden yönetilir; sayfalarda {{price:pro}} ile, dile göre biçimlenerek yazılır. TR sayfaları için {{price:proTR}} (lansman fiyatı).",
+    "price": 6.99,
+    "priceTR": 3.99,
+    "currency": "USD"
+  },
+  "release": {
+    "version": "1.3.0",
+    "date": "2026-11-18",
+    "fileName": "HermoPDF-Setup-1.3.0.exe",
+    "downloadUrl": "/download/HermoPDF-Setup-1.3.0.exe",
+    "sizeMB": 134,
+    "installedMB": 460,
+    "sha256": "9bf3ec4f49efe6b93d8cf4bd1c4dd1578a355bf429facd556036f2f8b23f3fd0",
+    "virustotalUrl": ""
+  },
+  "owner": {
+    "brand": "NorthLightPixels",
+    "handle": "Fediac",
+    "legalName": "Mert Demirağ",
+    "address": "İstanbul, Türkiye"
+  },
+  "legalUpdated": {
+    "tr": "17 Kasım 2026",
+    "en": "17 November 2026",
+    "iso": "2026-11-17"
+  },
+  "compareDate": {
+    "iso": "2026-11-08",
+    "tr": "8 Kasım 2026",
+    "en": "8 November 2026"
+  }
+}

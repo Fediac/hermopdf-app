@@ -1,0 +1,47 @@
+<!--meta
+{
+  "title": "Word'den PDF'e Dönüştürme Programı (İki Motorlu) | HermoPDF",
+  "description": "Word belgesini PDF'e çevir: Microsoft Word yüklüyse onun motoruyla, değilse yerleşik motorla. PDF'ten Word'e dönüştürme de var."
+}
+-->
+<section class="page-head">
+  <div class="wrap narrow">
+    <span class="eyebrow">Word → PDF</span>
+    <h1>Word belgen, <span class="hl">bozulmadan</span> PDF olsun</h1>
+    <p class="lead">Görseller kaymasın, yazı tipleri değişmesin diye iki motor var.</p>
+    <div class="actions"><a class="btn btn-primary btn-lg" href="{{url:download}}" data-gc="word-download">{{t:ctaDownload}}</a></div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div class="grid grid-2">
+      <div class="card">
+        <span class="ico">{{> ico-word}}</span>
+        <h2 class="h3">1. Microsoft Word yüklüyse</h2>
+        <p>Word'ün kendi PDF motoru kullanılır; sonuç Word'de "PDF olarak kaydet"le aynıdır. .doc, .docx ve Word'ün açabildiği diğer biçimler dönüştürülür.</p>
+        <p class="small muted">Açık Word pencerelerine dokunulmaz.</p>
+      </div>
+      <div class="card">
+        <span class="ico">{{> ico-pages}}</span>
+        <h2 class="h3">2. Word yoksa</h2>
+        <p>Yerleşik motor .docx belgelerini doğrudan PDF'e çevirir. Office gerekmez.</p>
+        <p class="small muted">.docx ailesiyle çalışır (.docx, .docm, .dotx). Karmaşık düzenlerde Word kadar birebir olmayabilir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="ters-yon">
+  <div class="wrap narrow">
+    <h2 id="ters-yon">Ters yön de var</h2>
+    <ul class="checklist">
+      <li><strong>PDF → Word (.docx):</strong> metni düzenlenebilir hale getir. Taranmış belgede önce <a href="{{url:ocr}}">OCR</a> yap.</li>
+      <li><strong>PDF → görsel:</strong> sayfaları PNG ya da JPEG kaydet.</li>
+      <li><strong>Görsel → PDF:</strong> fotoğraf ve taramaları tek PDF'te topla.</li>
+      <li><strong>Metin → PDF:</strong> düz metin dosyasını PDF yap.</li>
+    </ul>
+  </div>
+</section>
+
+{{> cta}}

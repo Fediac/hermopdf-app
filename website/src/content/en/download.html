@@ -1,0 +1,84 @@
+<!--meta
+{
+  "title": "Download HermoPDF: Free PDF Editor for Windows 10/11",
+  "description": "Download HermoPDF from the official source. Version, size, SHA-256 checksum and what to do if Windows shows a warning."
+}
+-->
+<section class="page-head">
+  <div class="wrap narrow">
+    <span class="eyebrow">Download</span>
+    <h1>Download HermoPDF</h1>
+    <p class="lead">Free. Works offline after installation.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap narrow">
+    <div class="card download-card">
+      <div class="dl-top">
+        <div>
+          <h2 class="h3">HermoPDF {{cfg:release.version}} for Windows</h2>
+          <p class="muted">Released: {{cfg:release.date}} · Installer about {{cfg:release.sizeMB}} MB · Windows 10 / 11, 64-bit</p>
+        </div>
+        <a class="btn btn-primary btn-lg btn-stack" href="{{cfg:release.downloadUrl}}" rel="noopener" data-gc="download-click">Download (.exe)<span class="sub">from hermopdf.com</span></a>
+      </div>
+      <dl class="facts">
+        <dt>File name</dt><dd><code>{{cfg:release.fileName}}</code></dd>
+        <dt>SHA-256</dt><dd><code class="hash" id="sha">{{cfg:release.sha256}}</code><button class="btn btn-ghost btn-sm mt-1" type="button" data-copy="sha">Copy checksum</button></dd>
+        {{?release.virustotalUrl}}<dt>Virus scan</dt><dd><a href="{{cfg:release.virustotalUrl}}" rel="noopener">VirusTotal report for this file</a></dd>{{/?}}
+        <dt>Source code</dt><dd><a href="{{cfg:githubUrl}}" rel="noopener">On GitHub (GPL-3.0)</a></dd>
+        <dt>Interface</dt><dd>Turkish</dd>
+      </dl>
+      <p class="small muted">Only download from this site; copies elsewhere may have been modified.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="smartscreen">
+  <div class="wrap narrow">
+    <div class="warn">
+      <h2 id="smartscreen">Why does Windows say "Windows protected your PC"?</h2>
+      <p>HermoPDF is currently published <strong>without a code-signing certificate</strong>; these are expensive for an independent developer. SmartScreen warns about unsigned programs few people have downloaded yet. It does not mean "virus found", only "I do not recognise this file yet".</p>
+      <h3>What should you do?</h3>
+      <ol>
+        <li>Check that the file really came from us (below).</li>
+        <li>In the warning, click <strong>More info</strong>.</li>
+        <li>Check that the publisher is "Unknown publisher" and the file name is <code>{{cfg:release.fileName}}</code>, then click <strong>Run anyway</strong>.</li>
+      </ol>
+      <p class="small">If <strong>Smart App Control</strong> is on in Windows 11, unsigned programs may be blocked entirely. We do not recommend switching it off; waiting for a code-signed release is safer. A code-signed release is high on our list.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="verify">
+  <div class="wrap narrow">
+    <h2 id="verify">How to verify the file you downloaded</h2>
+    <ol class="steps">
+      <li><b>Open Command Prompt.</b>Type <code>cmd</code> in the Start menu and press Enter.</li>
+      <li><b>Run this command</b>(if the file is in your Downloads folder):<br><code class="hash" id="certutil">certutil -hashfile "%USERPROFILE%\Downloads\{{cfg:release.fileName}}" SHA256</code><button class="btn btn-ghost btn-sm mt-1" type="button" data-copy="certutil">Copy command</button></li>
+      <li><b>Compare the result with the SHA-256 above.</b>If every character matches, it is our file. If not, do not run it, and let us know.</li>
+    </ol>
+    <p>Antivirus programs sometimes flag new unsigned programs by mistake; if you see that, <a href="{{url:support}}">tell us</a>.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="requirements">
+  <div class="wrap narrow">
+    <h2 id="requirements">System requirements</h2>
+    <div class="table-wrap">
+      <table>
+        <tbody>
+          <tr><th scope="row">Operating system</th><td>Windows 10 or Windows 11, 64-bit (x64)</td></tr>
+          <tr><th scope="row">Disk space</th><td>About {{cfg:release.installedMB}} MB once installed</td></tr>
+          <tr><th scope="row">Internet</th><td>Not needed.</td></tr>
+          <tr><th scope="row">Microsoft Word</th><td>Optional. If installed, it is used for Word → PDF; otherwise the built-in engine is used.</td></tr>
+          <tr><th scope="row">Interface language</th><td>Turkish</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted mt-1">No macOS or Linux version. The update check is asked once on the start screen; if you say no, the app does not go online on its own (<a href="{{url:privacy}}">details</a>). To uninstall, use Windows Settings → Apps.</p>
+  </div>
+</section>
+
+
+{{> cta}}

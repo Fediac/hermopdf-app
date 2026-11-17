@@ -1,0 +1,58 @@
+<!--meta
+{
+  "title": "Satın Alma Tamamlandı | HermoPDF",
+  "description": "Teşekkürler! HermoPDF Lifetime Pro lisans anahtarın burada. Anahtarı kopyala ya da lisans dosyasını indir, sonra programda etkinleştir."
+}
+-->
+<section class="page-head">
+  <div class="wrap narrow center">
+    <span class="eyebrow">Teşekkürler</span>
+    <h1>Hoş geldin, Pro!</h1>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap narrow">
+    <p class="warn" id="claim-demo" hidden></p>
+    <div class="card" id="claim" data-auto aria-live="polite">
+      <div id="claim-wait">
+        <p><span class="spinner" aria-hidden="true"></span> <span id="claim-wait-text">HermoPDF lisans anahtarın hazırlanıyor…</span></p>
+        <noscript><p>Anahtarı göstermek için JavaScript gerekiyor. JavaScript açık değilse <a href="mailto:{{cfg:contactEmail}}">{{cfg:contactEmail}}</a> adresine yaz.</p></noscript>
+      </div>
+
+      <form class="form" id="claim-form" hidden novalidate>
+        <p class="status" id="claim-form-msg" role="status"></p>
+        <label for="claim-fskey">Freemius lisans anahtarın
+          <input class="input" id="claim-fskey" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+        </label>
+        <p class="small muted">Bu anahtarı ödemeyi alan Freemius verir; satın almadan sonra Freemius'tan gelen e-postalarına bak. Freemius anahtarı HermoPDF'te doğrudan çalışmaz, burada senin HermoPDF anahtarına çevrilir. Freemius anahtarının kendisini saklamayız.</p>
+        <div><button class="btn btn-primary" type="submit">HermoPDF anahtarımı göster</button></div>
+      </form>
+
+      <div id="claim-ok" hidden tabindex="-1">
+        <h2 class="h3">HermoPDF lisans anahtarın hazır</h2>
+        <div class="warn"><p><strong>Anahtarı şimdi kaydet.</strong> Kopyala ya da lisans dosyasını indir ve güvenli bir yerde sakla. Kaybedersen <a href="{{url:recover}}">Lisansımı kaybettim</a> sayfasından Freemius anahtarınla yeniden alabilirsin.</p></div>
+        <div class="key-box" id="claim-key"></div>
+        <div class="copy-row">
+          <button class="btn btn-primary" type="button" data-copy="claim-key">Anahtarı kopyala</button>
+          <a class="btn btn-ghost" id="claim-dl" href="#" download>Lisans dosyasını indir</a>
+        </div>
+        <p class="small muted mt-1">Dosya adı: <code id="claim-file-name">hermopdf-pro.hermopdflicense</code></p>
+        <p class="small muted" id="claim-email-row" hidden>Anahtar şu e-posta adresine bağlı: <strong id="claim-email"></strong></p>
+      </div>
+    </div>
+    <p class="small muted mt-1">Sorun mu var? <a href="mailto:{{cfg:contactEmail}}">{{cfg:contactEmail}}</a> adresine yaz.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="etkinlestir">
+  <div class="wrap narrow">
+    <h2 id="etkinlestir">Programda etkinleştir</h2>
+    <ol class="steps">
+      <li><b>HermoPDF'i aç.</b>Kurmadıysan <a href="{{url:download}}">buradan indir</a>.</li>
+      <li><b>Lisans penceresini aç.</b>Sekmelerin sağındaki taçlı <strong>Pro</strong> düğmesine, sonra <strong>Lisansım var</strong>'a tıkla.</li>
+      <li><b>Anahtarı yapıştır ya da dosyayı seç.</b>HermoPDF anahtarını (<code>UPRO1.</code> ile başlar) yapıştır ya da <strong>Dosyadan yükle</strong> ile <code>.hermopdflicense</code> dosyasını seç, sonra <strong>Etkinleştir</strong>'e bas. İnternet gerekmez.</li>
+    </ol>
+    <p class="small muted">Anahtarın içinde e-posta adresin yazılıdır; herkese açık paylaşma. Sorun olursa <a href="{{url:support}}">bize yaz</a>. 14 gün içinde <a href="{{url:refund}}">koşulsuz iade</a> hakkın var.</p>
+  </div>
+</section>

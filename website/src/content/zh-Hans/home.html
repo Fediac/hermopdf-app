@@ -1,0 +1,128 @@
+<!--meta
+{
+  "title": "免费离线 PDF 编辑器（Windows），无需账号 | HermoPDF",
+  "ogTitle": "HermoPDF：您的 PDF 由您做主。",
+  "description": "在自己的电脑上免费编辑、签名、合并 PDF，并把 PDF 压缩到 1 MB。OCR 和批量处理需要 Pro。无需账号，无广告，无水印，无订阅。开源（GPL-3.0）。"
+}
+-->
+<section class="sky" id="hermes" aria-labelledby="sky-title" {{> hermes-data}}>
+  {{> hermes-stage}}
+  <div class="wrap sky-inner">
+    <div class="sky-top">
+      <div class="sky-text">
+        <span class="eyebrow">适用于 Windows 的免费 PDF 编辑器</span>
+        <h1 id="sky-title">您的 <span class="hl">PDF 由您做主。</span></h1>
+        <p class="lead"><strong>无订阅，无广告。您的 PDF 处理工作在您自己的电脑上完成。</strong></p>
+      </div>
+      <div class="sky-cta">
+        <a class="btn btn-primary btn-lg btn-stack sky-dl" href="{{dlhref}}" data-gc="hero-download">{{t:ctaDownload}}<span class="sub">{{t:ctaDownloadSub}}</span></a>
+      </div>
+    </div>
+    <div class="sky-more">
+      <ul class="pill-row" aria-label="简而言之">
+        <li class="pill">无需账号</li>
+        <li class="pill">无需银行卡</li>
+        <li class="pill">无广告</li>
+        <li class="pill">无水印</li>
+        <li class="pill">开源</li>
+      </ul>
+      <p class="hero-meta">版本 {{cfg:release.version}} · Windows 10 / 11（64 位） · 可离线使用 · 应用界面：土耳其语 · <a href="{{url:download}}">安装并验证</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section hook-sec" aria-labelledby="hook-title">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">压缩到目标大小</span>
+      <h2 id="hook-title">发邮件或上传表单时提示“文件太大”？</h2>
+      <p class="lead">邮件附件、申请表单、考试或招标系统都有大小限制。输入限制大小，就能在您自己的电脑上把 PDF 缩小。无需上传，无需排队。</p>
+      <div class="actions"><a class="btn btn-ghost" href="{{url:compress}}">目标大小压缩 →</a></div>
+    </div>
+    <div class="hero-art">
+      {{sizedemo}}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">您能做什么？</span>
+      <h2 id="features-title">日常 PDF 工作，一个程序全搞定</h2>
+      <p class="lead">日常 PDF 工作免费，没有每日次数限制，也没有页数限制。OCR 和批量处理随 Pro 提供。</p>
+    </div>
+    <div class="grid grid-4 feat-grid">
+      <a class="card card-link" href="{{url:compress}}"><span class="ico">{{> ico-shrink}}</span><h3>压缩到目标大小</h3><p>输入限制大小，应用会自动找到合适的档位。</p><span class="more">压缩 PDF →</span></a>
+      <a class="card card-link" href="{{url:edit}}"><span class="ico">{{> ico-edit}}</span><h3>编辑</h3><p>修改现有文字；添加文字、图片和批注。</p><span class="more">编辑 →</span></a>
+      <a class="card card-link" href="{{url:ocr}}"><span class="ico">{{> ico-ocr}}</span><h3>OCR <span class="tag tag-pro">Pro</span></h3><p>把扫描页面变成可搜索的文字。</p><span class="more">OCR →</span></a>
+      <a class="card card-link" href="{{url:sign}}"><span class="ico">{{> ico-sign}}</span><h3>签名</h3><p>手写一次，一键放到任何文档上。</p><span class="more">签名 →</span></a>
+      <a class="card card-link" href="{{url:redact}}"><span class="ico">{{> ico-redact}}</span><h3>真正的涂黑</h3><p>身份证号、IBAN……涂黑的文字会从文件中真正删除。</p><span class="more">涂黑 →</span></a>
+      <a class="card card-link" href="{{url:batch}}"><span class="ico">{{> ico-batch}}</span><h3>批量处理 <span class="tag tag-pro">Pro</span></h3><p>一次为几十个文件添加水印、页码或进行压缩。</p><span class="more">批量 →</span></a>
+      <a class="card card-link" href="{{url:word}}"><span class="ico">{{> ico-word}}</span><h3>Word → PDF</h3><p>已安装 Word 时使用 Word，否则使用内置引擎。</p><span class="more">Word → PDF →</span></a>
+      <a class="card card-link" href="{{url:claude}}"><span class="ico">{{> ico-claude}}</span><h3>Claude 连接</h3><p>需要时再开启；默认关闭。</p><span class="more">工作原理 →</span></a>
+    </div>
+    <div class="note mt-2">
+      <p><strong>还有：</strong>合并、拆分、重新排序、旋转、删除页面 · 密码 · 填写表单 · 图片转 PDF · PDF 转 Word 和图片 · 打印。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="compress-title">
+  <div class="wrap split split-shot">
+    <div>
+      <span class="eyebrow">核心功能</span>
+      <h2 id="compress-title">三步完成目标大小压缩</h2>
+      <ol class="steps">
+        <li><b>打开 PDF，点击“压缩”。</b></li>
+        <li><b>输入目标大小。</b>1、2、5、10 MB 一键即可；想要 500 KB 就输入 0.5。</li>
+        <li><b>查看压缩前后的大小。</b>您的原始文件保持不变。</li>
+      </ol>
+      <p><a href="{{url:compress}}">它是怎么做到的？→</a></p>
+    </div>
+    <div>
+      {{demo:kucultme|kucultme-dialog>kucultme-hedef|HermoPDF 的压缩窗口（界面为土耳其语）：当前大小 635.7 KB，目标大小框中输入了 0.2，另有 1 MB、2 MB、5 MB、10 MB（电子邮件）和 50% 一键按钮|应用自带的压缩窗口（界面为土耳其语）。}}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="compare-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">坦诚的对比</span>
+      <h2 id="compare-title">您想要什么？别人提供什么？我们怎么做？</h2>
+    </div>
+    <div class="ask-list">
+      <div class="ask-head" aria-hidden="true"><div>您想要什么？</div><div>别人提供什么？</div><div class="us">我们怎么做？</div></div>
+      <div class="ask"><div><span class="ask-h">您想要什么？</span><p>不用订阅就能编辑和签名。</p></div><div><span class="ask-h">别人提供什么？</span><p>Adobe Acrobat Standard：美国地区起价 US$14.99/月（年付方案）。</p></div><div class="us"><span class="ask-h">我们怎么做？</span><p>编辑和签名免费。Pro 为一次性购买。</p></div></div>
+      <div class="ask"><div><span class="ask-h">您想要什么？</span><p>把文件压到邮件或上传的大小限制以内。</p></div><div><span class="ask-h">别人提供什么？</span><p>选择一个级别，不行就反复重试，直到合适。</p></div><div class="us"><span class="ask-h">我们怎么做？</span><p>您输入目标大小；应用会在第一个达标的档位停下。</p></div></div>
+      <div class="ask"><div><span class="ask-h">您想要什么？</span><p>一款免费的离线程序。</p></div><div><span class="ask-h">别人提供什么？</span><p>PDF24 Creator 和 KillerPDF 也是；两者都不错。</p></div><div class="us"><span class="ask-h">我们怎么做？</span><p>目标大小压缩、优先考虑土耳其语用户的界面、双引擎 Word → PDF。OCR 和批量处理需要 Pro。</p></div></div>
+    </div>
+    <p class="small muted mt-1">竞品信息读取自官方页面，日期为 {{date:compareDate}}；内容可能会变化。<a href="{{url:compare}}">带来源的完整对比 →</a></p>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="model-title">
+  <div class="wrap">
+    <div class="grid grid-2 items-center">
+      <div>
+        <span class="eyebrow">用大白话讲讲商业模式</span>
+        <h2 id="model-title">日常 PDF 工作免费。</h2>
+        <p>阅读、编辑、压缩到目标大小、合并、拆分、签名和基本转换均免费。如果您愿意，一次性购买的 <strong>Lifetime Pro</strong> 可提供 <strong>OCR、批量处理和已保存的工作流</strong>，并支持后续开发。</p>
+        <div class="actions"><a class="btn btn-ghost" href="{{url:pricing}}">对比免费版与 Pro</a></div>
+      </div>
+      <div class="card">
+        <h3>为什么值得信任</h3>
+        <ul class="checklist">
+          <li>开放源代码（GPL-3.0）。</li>
+          <li>无遥测；检查更新需要您主动开启。</li>
+          <li>许可证激活可离线完成。</li>
+          <li>每个版本的 SHA-256 校验值都列在下载页面上。</li>
+        </ul>
+        <p class="small"><a href="{{url:privacy}}">隐私政策</a> · <a href="{{url:opensource}}">开源与许可</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

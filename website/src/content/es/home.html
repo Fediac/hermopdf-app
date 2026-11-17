@@ -1,0 +1,128 @@
+<!--meta
+{
+  "title": "Editor de PDF gratis y sin conexión para Windows | HermoPDF",
+  "ogTitle": "HermoPDF: tus PDF son tuyos.",
+  "description": "Edita, firma, une y comprime un PDF a 1 MB gratis en tu propio PC. OCR y procesamiento por lotes con Pro. Sin cuenta, anuncios ni suscripción."
+}
+-->
+<section class="sky" id="hermes" aria-labelledby="sky-title" {{> hermes-data}}>
+  {{> hermes-stage}}
+  <div class="wrap sky-inner">
+    <div class="sky-top">
+      <div class="sky-text">
+        <span class="eyebrow">Un editor de PDF gratuito para Windows</span>
+        <h1 id="sky-title">Tus PDF <span class="hl">son tuyos.</span></h1>
+        <p class="lead"><strong>Sin suscripción. Sin anuncios. Tu trabajo con PDF se hace en tu propio ordenador.</strong></p>
+      </div>
+      <div class="sky-cta">
+        <a class="btn btn-primary btn-lg btn-stack sky-dl" href="{{dlhref}}" data-gc="hero-download">{{t:ctaDownload}}<span class="sub">{{t:ctaDownloadSub}}</span></a>
+      </div>
+    </div>
+    <div class="sky-more">
+      <ul class="pill-row" aria-label="En resumen">
+        <li class="pill">Sin cuenta</li>
+        <li class="pill">Sin tarjeta</li>
+        <li class="pill">Sin anuncios</li>
+        <li class="pill">Sin marca de agua</li>
+        <li class="pill">Código abierto</li>
+      </ul>
+      <p class="hero-meta">Versión {{cfg:release.version}} · Windows 10 / 11 (64 bits) · Funciona sin conexión · Interfaz de la app: turco · <a href="{{url:download}}">Instalar y verificar</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section hook-sec" aria-labelledby="hook-title">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Comprimir a un tamaño objetivo</span>
+      <h2 id="hook-title">¿«Archivo demasiado grande» al enviar un correo o rellenar un formulario de subida?</h2>
+      <p class="lead">Los adjuntos de correo, los formularios de solicitud y los sistemas de exámenes o licitaciones tienen límites de tamaño. Escribe el límite y reduce el PDF en tu propio ordenador. Sin subir nada, sin colas.</p>
+      <div class="actions"><a class="btn btn-ghost" href="{{url:compress}}">Compresión a tamaño objetivo →</a></div>
+    </div>
+    <div class="hero-art">
+      {{sizedemo}}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">¿Qué puedes hacer?</span>
+      <h2 id="features-title">Todas las tareas diarias con PDF, en un solo programa</h2>
+      <p class="lead">El trabajo diario con PDF es gratis, sin límite diario ni de páginas. El OCR y el procesamiento por lotes vienen con Pro.</p>
+    </div>
+    <div class="grid grid-4 feat-grid">
+      <a class="card card-link" href="{{url:compress}}"><span class="ico">{{> ico-shrink}}</span><h3>Comprimir a un tamaño objetivo</h3><p>Escribe el límite; la app encuentra el ajuste adecuado.</p><span class="more">Comprimir PDF →</span></a>
+      <a class="card card-link" href="{{url:edit}}"><span class="ico">{{> ico-edit}}</span><h3>Editar</h3><p>Corrige el texto existente; añade texto, imágenes y notas.</p><span class="more">Edición →</span></a>
+      <a class="card card-link" href="{{url:ocr}}"><span class="ico">{{> ico-ocr}}</span><h3>OCR <span class="tag tag-pro">Pro</span></h3><p>Convierte páginas escaneadas en texto en el que se puede buscar.</p><span class="more">OCR →</span></a>
+      <a class="card card-link" href="{{url:sign}}"><span class="ico">{{> ico-sign}}</span><h3>Firmar</h3><p>Dibújala una vez y colócala en cualquier documento con un clic.</p><span class="more">Firma →</span></a>
+      <a class="card card-link" href="{{url:redact}}"><span class="ico">{{> ico-redact}}</span><h3>Tachado real</h3><p>Números de identificación, IBAN… El texto tachado desaparece del archivo.</p><span class="more">Tachado →</span></a>
+      <a class="card card-link" href="{{url:batch}}"><span class="ico">{{> ico-batch}}</span><h3>Procesamiento por lotes <span class="tag tag-pro">Pro</span></h3><p>Añade marca de agua, numera o comprime decenas de archivos a la vez.</p><span class="more">Lotes →</span></a>
+      <a class="card card-link" href="{{url:word}}"><span class="ico">{{> ico-word}}</span><h3>Word → PDF</h3><p>Usa Word si está instalado; si no, un motor integrado.</p><span class="more">Word → PDF →</span></a>
+      <a class="card card-link" href="{{url:claude}}"><span class="ico">{{> ico-claude}}</span><h3>Conexión con Claude</h3><p>Actívala si quieres; viene desactivada por defecto.</p><span class="more">Cómo funciona →</span></a>
+    </div>
+    <div class="note mt-2">
+      <p><strong>Además:</strong> unir, dividir, reordenar, girar y eliminar páginas · contraseñas · rellenar formularios · imágenes a PDF · PDF a Word y a imágenes · imprimir.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="compress-title">
+  <div class="wrap split split-shot">
+    <div>
+      <span class="eyebrow">La función estrella</span>
+      <h2 id="compress-title">Compresión a tamaño objetivo en 3 pasos</h2>
+      <ol class="steps">
+        <li><b>Abre el PDF y haz clic en «Comprimir».</b></li>
+        <li><b>Escribe el objetivo.</b>1, 2, 5 y 10 MB están a un clic; para 500 KB escribe 0,5.</li>
+        <li><b>Mira el tamaño de antes y después.</b>Tu original no se toca.</li>
+      </ol>
+      <p><a href="{{url:compress}}">¿Cómo funciona? →</a></p>
+    </div>
+    <div>
+      {{demo:kucultme|kucultme-dialog>kucultme-hedef|La ventana de compresión de HermoPDF (interfaz en turco): tamaño actual 635,7 KB, 0,2 escrito en el cuadro de tamaño objetivo y botones de un clic de 1 MB, 2 MB, 5 MB, 10 MB (correo) y 50 %|La propia ventana de compresión de la app (interfaz en turco).}}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="compare-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Una comparación honesta</span>
+      <h2 id="compare-title">¿Qué quieres? ¿Qué ofrecen otros? ¿Qué hacemos nosotros?</h2>
+    </div>
+    <div class="ask-list">
+      <div class="ask-head" aria-hidden="true"><div>¿Qué quieres?</div><div>¿Qué ofrecen otros?</div><div class="us">¿Qué hacemos nosotros?</div></div>
+      <div class="ask"><div><span class="ask-h">¿Qué quieres?</span><p>Editar y firmar sin suscripción.</p></div><div><span class="ask-h">¿Qué ofrecen otros?</span><p>Adobe Acrobat Standard: desde 14,99 US$ al mes en EE. UU. (plan anual).</p></div><div class="us"><span class="ask-h">¿Qué hacemos nosotros?</span><p>Editar y firmar es gratis. Pro se paga una sola vez.</p></div></div>
+      <div class="ask"><div><span class="ask-h">¿Qué quieres?</span><p>Quedar por debajo del límite de tamaño de un correo o de un formulario.</p></div><div><span class="ask-h">¿Qué ofrecen otros?</span><p>Elegir un nivel y repetir hasta que quepa.</p></div><div class="us"><span class="ask-h">¿Qué hacemos nosotros?</span><p>Tú escribes el objetivo; la app se detiene en el primer ajuste que cabe.</p></div></div>
+      <div class="ask"><div><span class="ask-h">¿Qué quieres?</span><p>Un programa gratuito y sin conexión.</p></div><div><span class="ask-h">¿Qué ofrecen otros?</span><p>PDF24 Creator y KillerPDF también lo son; ambos son buenos.</p></div><div class="us"><span class="ask-h">¿Qué hacemos nosotros?</span><p>Tamaño objetivo, una interfaz pensada primero para usuarios turcos, Word → PDF con doble motor. OCR y procesamiento por lotes con Pro.</p></div></div>
+    </div>
+    <p class="small muted mt-1">Los datos de la competencia se leyeron de las páginas oficiales el {{date:compareDate}}; pueden cambiar. <a href="{{url:compare}}">Comparativa completa con fuentes →</a></p>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="model-title">
+  <div class="wrap">
+    <div class="grid grid-2 items-center">
+      <div>
+        <span class="eyebrow">El modelo de negocio, en palabras claras</span>
+        <h2 id="model-title">El trabajo diario con PDF es gratis.</h2>
+        <p>Leer, editar, comprimir a un tamaño objetivo, unir, dividir, firmar y las conversiones básicas son gratis. Si quieres, un <strong>Lifetime Pro</strong> de pago único añade <strong>OCR, procesamiento por lotes y flujos de trabajo guardados</strong> y apoya el desarrollo.</p>
+        <div class="actions"><a class="btn btn-ghost" href="{{url:pricing}}">Comparar gratis y Pro</a></div>
+      </div>
+      <div class="card">
+        <h3>Por qué puedes confiar</h3>
+        <ul class="checklist">
+          <li>Código abierto (GPL-3.0).</li>
+          <li>Sin telemetría; la comprobación de actualizaciones es opcional.</li>
+          <li>La activación de la licencia funciona sin conexión.</li>
+          <li>La suma de comprobación SHA-256 de cada versión está en la página de descarga.</li>
+        </ul>
+        <p class="small"><a href="{{url:privacy}}">Política de privacidad</a> · <a href="{{url:opensource}}">Código abierto y licencia</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

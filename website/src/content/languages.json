@@ -1,0 +1,17 @@
+{
+  "_note": "Site dilleri. Sıra = dil menüsündeki sıra. code: hreflang ve <html lang>; path: adres öneki (en = kök, öneksiz); short: dar ekranda düğme yazısı; num: sayı biçimi (Intl); fs: ödeme ekranı (Freemius) dili. Metinler: content/strings/<code>.json, sayfalar: content/<code>/<id>.html (yoksa İngilizce gösterilir, noindex).",
+  "default": "en",
+  "languages": [
+    { "code": "en",      "path": "",      "native": "English",            "short": "English",  "dir": "ltr", "locale": "en_US", "num": "en-US",         "fs": "en" },
+    { "code": "tr",      "path": "tr",    "native": "Türkçe",             "short": "Türkçe",   "dir": "ltr", "locale": "tr_TR", "num": "tr-TR",         "fs": "tr" },
+    { "code": "es",      "path": "es",    "native": "Español",            "short": "Español",  "dir": "ltr", "locale": "es_ES", "num": "es-ES",         "fs": "es" },
+    { "code": "fr",      "path": "fr",    "native": "Français",           "short": "Français", "dir": "ltr", "locale": "fr_FR", "num": "fr-FR",         "fs": "fr" },
+    { "code": "de",      "path": "de",    "native": "Deutsch",            "short": "Deutsch",  "dir": "ltr", "locale": "de_DE", "num": "de-DE",         "fs": "de" },
+    { "code": "pt-BR",   "path": "pt-br", "native": "Português (Brasil)", "short": "Português","dir": "ltr", "locale": "pt_BR", "num": "pt-BR",         "fs": "pt_BR" },
+    { "code": "ru",      "path": "ru",    "native": "Русский",            "short": "Русский",  "dir": "ltr", "locale": "ru_RU", "num": "ru-RU",         "fs": "ru" },
+    { "code": "zh-Hans", "path": "zh",    "native": "简体中文",            "short": "中文",      "dir": "ltr", "locale": "zh_CN", "num": "zh-CN",         "fs": "zh_CN" },
+    { "code": "ja",      "path": "ja",    "native": "日本語",              "short": "日本語",    "dir": "ltr", "locale": "ja_JP", "num": "ja-JP",         "fs": "ja" },
+    { "code": "ko",      "path": "ko",    "native": "한국어",              "short": "한국어",    "dir": "ltr", "locale": "ko_KR", "num": "ko-KR",         "fs": "ko" },
+    { "code": "ar",      "path": "ar",    "native": "العربية",            "short": "العربية",  "dir": "rtl", "locale": "ar_AR", "num": "ar-u-nu-latn",  "fs": "ar" }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "_note": "tools/compress-demo.mjs tarafından üretildi; elle değiştirme. Uygulamanın kendisinde, her dilin Hermes örnek belgesiyle ölçüldü.",
+  "appVersion": "1.3.0",
+  "targetMB": 0.5,
+  "langs": {
+    "en": {
+      "beforeBytes": 4384993,
+      "afterBytes": 160286,
+      "reachedTarget": true,
+      "width": 960,
+      "height": 1032,
+      "seconds": 6.9,
+      "generatedAt": "2026-11-12T21:33:43.029Z"
+    },
+    "tr": {
+      "beforeBytes": 4385416,
+      "afterBytes": 160591,
+      "reachedTarget": true,
+      "width": 960,
+      "height": 1032,
+      "seconds": 6.8,
+      "generatedAt": "2026-11-12T21:33:54.731Z"
+    },
+    "es": {
+      "beforeBytes": 4384604,
+      "afterBytes": 159875,
+      "reachedTarget": true,
+      "width": 960,
+      "height": 1032,
+      "seconds": 6.9,
+      "generatedAt": "2026-11-12T21:34:06.455Z"
+    },
+    "fr": {
+      "beforeBytes": 4386398,
+      "afterBytes": 161568,
+      "reachedTarget": true,
+      "width": 960,
+      "height": 1058,
+      "seconds": 6.8,
+      "generatedAt": "2026-11-12T21:34:18.097Z"
+    },
+    "de": {
+      "beforeBytes": 4387013,
+      "afterBytes": 162202,
+      "reachedTarget": true,
+      "width": 960,
+      "height": 1058,
+      "seconds": 6.8,
+      "generatedAt": "2026-11-12T21:34:29.642Z"
+    },
+    "pt-BR": {
+      "beforeBytes": 4383904,
+      "afterBytes": 159182,
+      "reachedTarget": true,
+      "width": 960,
+      "height": 1058,
+      "seconds": 6.8,
+      "generatedAt": "2026-11-12T21:34:41.459Z"
+    },
+    "ru": {
+      "beforeBytes": 4385907,
+      "afterBytes": 161138,
+      "reachedTarget": true,
+      "width": 960,
+      "height": 1080,
+      "seconds": 6.9,
+      "generatedAt": "2026-11-12T21:34:53.166Z"
+    },
+    "zh-Hans": {
+      "beforeBytes": 4402660,
+      "afterBytes": 177604,
+      "reachedTarget": true,
+      "width": 960,
+      "height": 1032,
+      "seconds": 6.8,
+      "generatedAt": "2026-11-12T21:35:04.881Z"
+    },
+    "ja": {
+      "beforeBytes": 4390620,
+      "afterBytes": 166133,
+      "reachedTarget": true,
+      "width": 960,
+      "height": 1058,
+      "seconds": 6.8,
+      "generatedAt": "2026-11-12T21:35:17.004Z"
+    },
+    "ko": {
+      "beforeBytes": 4397839,
+      "afterBytes": 172117,
+      "reachedTarget": true,
+      "width": 960,
+      "height": 1032,
+      "seconds": 6.8,
+      "generatedAt": "2026-11-12T21:35:28.662Z"
+    },
+    "ar": {
+      "beforeBytes": 4385853,
+      "afterBytes": 160657,
+      "reachedTarget": true,
+      "width": 960,
+      "height": 1032,
+      "seconds": 6.8,
+      "generatedAt": "2026-11-12T21:35:40.453Z"
+    }
+  },
+  "generatedAt": "2026-11-12T21:35:40.454Z"
+}

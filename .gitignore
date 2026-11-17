@@ -1,0 +1,16 @@
+node_modules/
+dist/
+tests/shots/
+*.log
+.env
+.env.*
+!.env.example
+.wrangler/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+*.private.pem
+build/mcp/
+dist-mcpb/
+design/rename-yedek/
+design/ekran/pro-testi-*.png

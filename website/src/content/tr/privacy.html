@@ -1,0 +1,90 @@
+<!--meta
+{
+  "title": "Gizlilik Politikası | HermoPDF",
+  "description": "HermoPDF programı ve sitesi hangi verileri işler? Belgeler bilgisayarında işlenir, telemetri yok. Güncelleme denetimi, satın alma ve Claude bağlantısı ayrıntıları."
+}
+-->
+<section class="page-head">
+  <div class="wrap narrow">
+    <span class="eyebrow">Yasal</span>
+    <h1>Gizlilik politikası</h1>
+    <p class="muted">Son güncelleme: {{cfg:legalUpdated.tr}}</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap narrow prose">
+    <p class="draft">{{t:draftLegal}}</p>
+
+    <div class="okbox">
+      <h2>Kısaca</h2>
+      <ul>
+        <li>Normal PDF işlemleri (açma, düzenleme, küçültme, OCR, dönüştürme) bilgisayarında yapılır ve belgelerin bize gelmez. Claude bağlantısı gibi isteğe bağlı bir çevrim içi özelliği açarsan, o özelliğin kullandığı veri aşağıda anlatıldığı gibi bilgisayarından çıkar.</li>
+        <li>Programda telemetri ya da analitik yok. Hesap yok.</li>
+        <li>Program internete yalnız isteğe bağlı güncelleme denetimini açarsan bağlanır. Claude bağlantısını açarsan Claude'un okuduğu içerik kendi Claude sohbetinde Anthropic'e gider.</li>
+        <li>Pro satın alırsan lisans sunucumuz yalnız e-postanı, Freemius kimlik numaralarını, lisans numaranı, lisans durumunu ve tarihleri saklar. Adını, adresini, kart bilgini ve IP adresini saklamaz.</li>
+        <li>Sitemiz çerez kullanmaz; ziyaret istatistikleri için çerezsiz çalışan GoatCounter'ı kullanıyoruz. Uygulamanın kendisinde analitik yok.</li>
+      </ul>
+    </div>
+
+    <h2>1. Biz kimiz?</h2>
+    <p>HermoPDF, NorthLightPixels markası altında {{cfg:owner.legalName}} ({{cfg:owner.address}}) tarafından geliştirilir. Bu politikadaki "biz", bu kişiyi ifade eder. Gizlilikle ilgili her soru için: <a href="mailto:{{cfg:contactEmail}}">{{cfg:contactEmail}}</a></p>
+
+    <h2>2. HermoPDF programı</h2>
+    <h3>2.1 Belgelerin</h3>
+    <p>Açtığın, düzenlediğin, küçülttüğün, OCR yaptığın ya da dönüştürdüğün bütün belgeler yalnız senin bilgisayarında işlenir. Belge içerikleri, dosya adları ya da yaptığın işlemler bize gönderilmez. Microsoft Word ile dönüştürme seçilirse, işlem bilgisayarındaki Word ile yerel olarak yapılır.</p>
+    <h3>2.2 Telemetri yok</h3>
+    <p>Programda kullanım istatistiği, çökme raporu ya da analitik toplayan bir bileşen yoktur. Programı kullanmak için hesap açman gerekmez.</p>
+    <h3>2.3 Bilgisayarında saklananlar</h3>
+    <p>Ayarların, kaydetmeyi seçtiğin imza ve paraflar, son açılan dosyalar listesi ve (varsa) Pro lisans anahtarın yalnız bilgisayarındaki uygulama klasöründe saklanır. Bunlar bize gönderilmez.</p>
+    <h3>2.4 İsteğe bağlı güncelleme denetimi</h3>
+    <p>Başlangıç ekranında, güncellemeleri denetlemek isteyip istemediğin bir kez sorulur. Kabul edersen program <strong>günde en fazla bir kez</strong> sitemizden küçük, dijital olarak imzalanmış bir dosya indirir. Bu dosyada en son sürümün numarası, tarihi, indirme sayfası, SHA-256 özeti ve kısa sürüm notları vardır. Bu istekte bir hesap, belge ya da kimlik bilgisi gönderilmez. Ancak her web isteğinde olduğu gibi <strong>IP adresin</strong> ve standart başlıklarda <strong>uygulama sürümü</strong> sunucuya ulaşır. Reddedersen program bu denetim için internete hiç bağlanmaz.</p>
+    <h3>2.5 Pro kullanıcıları: iade listesi</h3>
+    <p>Pro lisansın varsa ve güncelleme denetimini açtıysan, aynı denetim <strong>haftada en fazla bir kez</strong> iade edilmiş ya da ters ibraz (chargeback) edilmiş lisansların imzalı listesini de indirir. Bu istekte lisans anahtarın ya da e-postan gönderilmez; listeyle karşılaştırma bilgisayarında yapılır. Lisans etkinleştirmenin kendisi internet gerektirmez.</p>
+
+    <h2>3. Claude bağlantısı (isteğe bağlı)</h2>
+    <p>Claude bağlantısı <strong>varsayılan olarak kapalıdır</strong>. Açarsan, Claude Desktop bilgisayarında çalışan yerel bir sunucu (MCP) üzerinden HermoPDF'e bağlanır. Bu durumda Claude'un bu bağlantı üzerinden okuduğu her şey (sayfa metinleri, sayfa görüntüleri, arama sonuçları, belge adları) <strong>senin kendi Claude sohbetinin içinde Anthropic'e gider</strong> ve Claude hesabının koşullarına tabidir. Bu veriler bize gelmez. Claude dosyalarının üzerine kaydedemez ve karartma uygulayamaz; bunlar için uygulamada senin onayın gerekir. Bağlantı ücretsizdir, ancak Claude kullanımı kendi Claude planından düşer. Anthropic'in veri işleme koşulları için Anthropic'in gizlilik politikasına bak.</p>
+
+    <h2>4. Bu web sitesi</h2>
+    <h3>4.1 Ziyaret istatistikleri (GoatCounter)</h3>
+    <p>Hangi sayfaların ne kadar okunduğunu anlamak için <a href="https://www.goatcounter.com/" rel="noopener">GoatCounter</a> kullanıyoruz. GoatCounter, kendi açıklamasına göre çerez ya da kalıcı bir kullanıcı tanımlayıcısı kullanmaz. Sayfa yolu, yönlendiren site, tarayıcı türü, ekran boyutu ve kabaca konum (ülke) gibi toplu bilgiler kaydedilir. Sitemiz GoatCounter'a adres çubuğundaki sorgu bilgilerini (ör. işlem kimliği) asla göndermez; yalnız sayfa yolunu gönderir. Ayrıca "İndir" ve "Satın al" düğmelerine kaç kez tıklandığını sayarız.</p>
+    <h3>4.2 Çerezler</h3>
+    <p>Sitemiz kendi çerezini kullanmaz. Freemius'un ödeme betiği yalnız fiyat sayfasında ve yalnız satın alma açıkken yüklenir; yüklenirken Freemius'a bağlanılır, bu sırada IP adresin Freemius'a ulaşır. Ödeme penceresini açtığında Freemius kendi çerezlerini ya da benzer teknolojilerini kullanabilir. Bunların hepsi Freemius'un kendi politikasına tabidir. Diğer sayfalarda Freemius yüklenmez.</p>
+    <h3>4.3 Barındırma ve indirmeler</h3>
+    <p>Site Cloudflare üzerinde barındırılır. Cloudflare, her web sitesinde olduğu gibi, güvenlik ve işletim için teknik bağlantı bilgilerini (ör. IP adresi) işleyebilir. Kurulum dosyaları bu siteden (hermopdf.com) Cloudflare üzerinden sunulur.</p>
+
+    <h2>5. Lifetime Pro satın alma</h2>
+    <h3>5.1 Ödeme: Freemius</h3>
+    <p>Satış, resmî satıcı (Merchant of Record) rolünü üstlenen <strong>Freemius</strong> üzerinden yapılır. Kart bilgileri ve fatura bilgileri gibi ödeme verilerini Freemius toplar ve kendi gizlilik politikasına göre işler. Kart bilgilerini biz hiçbir zaman görmeyiz.</p>
+    <h3>5.2 Lisans sunucumuzun sakladıkları</h3>
+    <p>Lisansını üretip sana teslim edebilmek, kaybedersen yeniden gönderebilmek ve iadeleri işleyebilmek için lisans sunucumuz <strong>yalnız şunları</strong> saklar:</p>
+    <ul>
+      <li>e-posta adresin,</li>
+      <li>Freemius işlem ve müşteri numaraları,</li>
+      <li>lisans numarası ve lisansı imzalayan anahtarın kimliği,</li>
+      <li>lisansın durumu (etkin ya da iptal) ve durumu değiştiren işlemin türü (ör. iade),</li>
+      <li>ilgili zaman damgaları.</li>
+    </ul>
+    <p>Bunlara ek olarak, aynı ödeme bildirimini iki kez işlememek için Freemius'un bildirim numaralarını; iade ve itiraz kayıtlarının da numarasını, türünü, durumunu ve zamanını saklarız (tutar saklanmaz). Lisans anahtarının kendisini saklamayız; gerektiğinde bu bilgilerden yeniden üretiriz.</p>
+    <p>Kötüye kullanımı önlemek için lisans alma ve kurtarma isteklerinde istek sayısını sınırlarız. Bunun için IP adresin ve e-postan düz metin olarak saklanmaz; yalnız bunlardan üretilen kısa bir özet (hash) bir sayaçla birlikte en çok yaklaşık bir gün tutulur. Sunucu günlüklerine e-posta adresi yazılmaz. Lisans sunucusu da Cloudflare üzerinde çalışır; Cloudflare, her web isteğinde olduğu gibi teknik bağlantı bilgilerini (ör. IP adresi) güvenlik ve işletim için işleyebilir.</p>
+    <p><strong>Not:</strong> Lisans anahtarının içinde e-posta adresin yazılıdır; programın lisansı internetsiz doğrulayabilmesi bunu gerektirir. Anahtarını başkasıyla paylaşırsan e-posta adresin de görünür.</p>
+    <h3>5.3 E-posta</h3>
+    <p>Satın alma sonrası bir kez giden lisans e-postasını ve "lisansımı kaybettim" e-postalarını, işlem e-postası hizmeti <strong>Resend</strong> aracılığıyla, Tokyo (ap-northeast-1) bölgesinden göndeririz. Resend yalnız e-posta adresini ve mesajın içindeki lisans bilgisini işler. Bu e-postalar yalnız lisansınla ilgilidir; pazarlama e-postası göndermeyiz. Ayrıca Freemius kendi makbuz ve hesap e-postalarını sana ayrıca gönderebilir.</p>
+    <h3>5.4 Saklama süresi</h3>
+    <p>Lisans kayıtlarını, lisans geçerli olduğu sürece ve yasal yükümlülüklerin gerektirdiği süre boyunca saklarız. Kaydının silinmesini istersen bize yaz; sildikten sonra lisansını yeniden gönderemeyeceğimizi bilmelisin.</p>
+
+    <h2>6. Hizmet sağlayıcılar (alt işleyiciler)</h2>
+    <p>Satın alma ve lisans akışını şu üçüncü taraflarla yürütürüz. Her biri yalnız kendi görevi için gereken veriyi işler:</p>
+    <ul>
+      <li><strong>Freemius, Inc.</strong>: resmî satıcı (Merchant of Record) olarak ödeme; makbuz düzenler ve kendi platformunda alıcı için bir hesap açabilir.</li>
+      <li><strong>Resend</strong>: lisans e-postasını iletir (Tokyo, ap-northeast-1); e-posta adresini ve mesajdaki lisans bilgisini görür.</li>
+      <li><strong>Cloudflare</strong>: bu siteyi barındırır; lisans sunucusunu (Workers) ve veritabanını (D1) çalıştırır.</li>
+    </ul>
+
+    <h2>7. Hakların</h2>
+    <p>Hakkında hangi verileri işlediğimizi öğrenmek, düzeltilmesini ya da silinmesini istemek ve yürürlükteki veri koruma mevzuatı kapsamındaki diğer haklarını kullanmak için <a href="mailto:{{cfg:contactEmail}}">{{cfg:contactEmail}}</a> adresine yazabilirsin.</p>
+
+    <h2>8. Değişiklikler</h2>
+    <p>Bu politikayı değiştirirsek bu sayfadaki "Son güncelleme" tarihini yenileriz. Programın ağ davranışını değiştiren bir değişiklik olursa bunu sürüm notlarında da açıkça yazarız.</p>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src app://pu; style-src 'unsafe-inline' app://pu; img-src data: blob: app://pu; font-src data: blob: app://pu; connect-src app://pu">
+<title>Word → PDF</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fff; }
+  #out .docx-wrapper { padding: 0; background: #fff; display: block; }
+  #out .docx-wrapper > section.docx { box-shadow: none; margin: 0; break-after: page; }
+  #out .docx-wrapper > section.docx:last-child { break-after: auto; }
+</style>
+<script src="../../node_modules/jszip/dist/jszip.min.js"></script>
+<script src="../../node_modules/docx-preview/dist/docx-preview.min.js"></script>
+</head>
+<body>
+<div id="out"></div>
+<script src="js/docx-print.js"></script>
+</body>
+</html>

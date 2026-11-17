@@ -1,0 +1,23 @@
+{
+  "_note": "tools/shots.mjs tarafından üretildi; elle değiştirme. Uygulamanın kendisinde, sentetik test belgesiyle ölçüldü.",
+  "generatedAt": "2026-11-11T16:14:17.940Z",
+  "appVersion": "1.3.0",
+  "cases": [
+    {
+      "id": "fixture-test-pdf",
+      "source": "PDFUsta/tests/fixtures/test.pdf",
+      "label": {
+        "tr": "4 sayfalık sentetik test belgesi (metin ve fotoğraf içeriyor)",
+        "en": "4-page synthetic test document (text and a photo)"
+      },
+      "pages": 4,
+      "beforeBytes": 650931,
+      "afterBytes": 195870,
+      "targetBytes": 209715,
+      "targetMB": 0.2,
+      "seconds": 0.6,
+      "level": "Hafif",
+      "reachedTarget": true
+    }
+  ]
+}

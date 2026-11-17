@@ -1,0 +1,36 @@
+<!--meta
+{
+  "title": "Redact PDF Offline: Text Is Really Removed | HermoPDF",
+  "description": "A black box is not enough. In HermoPDF the ID numbers, IBANs or addresses you redact are removed from the file, not just covered."
+}
+-->
+<section class="hero hero-sm">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">True redaction</span>
+      <h1>A black box is <span class="hl">not enough.</span></h1>
+      <p class="lead">A black rectangle over text does not hide it; the text underneath can often still be selected and searched. HermoPDF <strong>actually removes</strong> the content you mark.</p>
+      <div class="actions"><a class="btn btn-primary btn-lg" href="{{url:download}}" data-gc="redact-download">{{t:ctaDownload}}</a></div>
+    </div>
+    <div>{{shot:karartma>karartma-yakin|Areas marked for redaction, with a notice bar saying they are marked and an "apply redaction" button (interface in Turkish)}}</div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="redact-how">
+  <div class="wrap narrow">
+    <h2 id="redact-how">How it works</h2>
+    <ol class="steps">
+      <li><b>Mark the areas to hide.</b>ID numbers, IBANs, addresses, signatures… Marks are only marks at first; you can undo them.</li>
+      <li><b>Click "Apply redaction".</b>Once you confirm, the pages become high-resolution (200 DPI) images, the marked areas are painted black and the text there is dropped from the file. Other text stays selectable.</li>
+      <li><b>Share the copy.</b>Save the redacted document under a new name; keep the original.</li>
+    </ol>
+    <div class="okbox">
+      <p><strong>Try it yourself:</strong> after saving, try to select or search the redacted text. You will not find it, because it is no longer there.</p>
+    </div>
+    <div class="warn mt-2">
+      <p><strong>Honest note:</strong> once saved, redaction cannot be reversed in that file; check the result before sharing. A redacted page becomes an image, so its links may be lost and the file may grow a little. Draw the box so it fully covers the text.</p>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

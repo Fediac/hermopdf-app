@@ -1,0 +1,17 @@
+<div class="sky-stage">
+  <img class="sky-img" src="/hermes/ilk.jpg" width="1280" height="720" alt="{{t:skyAlt}}" fetchpriority="high" decoding="async">
+  <div class="sky-frame" aria-hidden="true"><div class="sky-pdf">{{> hermes-pdf}}</div></div>
+</div>
+<div class="sky-shade" aria-hidden="true"></div>
+<button type="button" class="sky-motion" data-paused="false" data-pause="{{t:skyMotion}}" data-resume="{{t:skyMotionResume}}" data-play="{{t:skyMotionPlay}}" hidden><svg class="i-pause" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M4 2.5h3v11H4zM9 2.5h3v11H9z" fill="currentColor"/></svg><svg class="i-play" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M4.5 2.5v11l9-5.5z" fill="currentColor"/></svg><span>{{t:skyMotion}}</span></button>
+<div class="sky-bar">
+  <p class="sky-status" role="status"></p>
+  <div class="sky-live" hidden>
+    <button type="button" class="btn btn-sm sky-btn" data-sky="skip">{{t:skySkip}}</button>
+  </div>
+  <div class="sky-end" hidden>
+    <button type="button" class="btn btn-sm sky-btn" data-sky="again">{{t:skyAgain}}</button>
+    <button type="button" class="btn btn-sm sky-btn" data-sky="close">{{t:skyClose}}</button>
+    <a class="sky-steps" href="{{url:download}}">{{t:skySteps}}</a>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+<!--meta
+{
+  "title": "Lost My License | HermoPDF",
+  "description": "Lost your HermoPDF Pro key, or bought on the Freemius page? Paste your Freemius license key and get your HermoPDF key right away."
+}
+-->
+<section class="page-head">
+  <div class="wrap narrow">
+    <span class="eyebrow">License</span>
+    <h1>Lost my license</h1>
+    <p class="lead">Get your HermoPDF key again here. If you bought on Freemius' own checkout page, this is also where you get your key; that page does not bring you back to our site.</p>
+  </div>
+</section>
+
+<section class="section-tight" aria-labelledby="fs-key">
+  <div class="wrap narrow">
+    <h2 id="fs-key" class="h3">Get it now with your Freemius license key</h2>
+    <p class="warn" id="claim-demo" hidden></p>
+    <div class="card" id="claim" aria-live="polite">
+      <div id="claim-wait" hidden>
+        <p><span class="spinner" aria-hidden="true"></span> <span id="claim-wait-text">Preparing your HermoPDF license key…</span></p>
+      </div>
+
+      <form class="form" id="claim-form" novalidate>
+        <p class="status" id="claim-form-msg" role="status"></p>
+        <label for="claim-fskey">Your Freemius license key
+          <input class="input" id="claim-fskey" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+        </label>
+        <p class="small muted">Freemius, who processed your payment, gives you this key; check the e-mails Freemius sent you after the purchase. The Freemius key does not work in HermoPDF directly; here it is turned into your HermoPDF key. We do not store the Freemius key itself. Refunded or cancelled purchases do not get a key.</p>
+        <div><button class="btn btn-primary" type="submit">Show my HermoPDF key</button></div>
+      </form>
+
+      <div id="claim-ok" hidden tabindex="-1">
+        <h2 class="h3">Your HermoPDF license key is ready</h2>
+        <div class="warn"><p><strong>Save the key now.</strong> Copy it or download the license file and keep it somewhere safe.</p></div>
+        <div class="key-box" id="claim-key"></div>
+        <div class="copy-row">
+          <button class="btn btn-primary" type="button" data-copy="claim-key">Copy key</button>
+          <a class="btn btn-ghost" id="claim-dl" href="#" download>Download license file</a>
+        </div>
+        <p class="small muted mt-1">File name: <code id="claim-file-name">hermopdf-pro.hermopdflicense</code></p>
+        <p class="small muted" id="claim-email-row" hidden>The key is tied to this e-mail address: <strong id="claim-email"></strong></p>
+        <p class="small">To activate: in HermoPDF click the crown <strong>Pro</strong> button, then <strong>Lisansım var</strong> (I have a license); paste the key or use <strong>Dosyadan yükle</strong> (Load from file), then <strong>Etkinleştir</strong> (Activate). Not installed? <a href="{{url:download}}">Download it here</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" aria-labelledby="by-email">
+  <div class="wrap narrow">
+    <h2 id="by-email" class="h3">Or ask for it by e-mail</h2>
+    <div class="card">
+      <form class="form" id="recover-form" novalidate>
+        <p>Enter the e-mail you used at checkout; if there is an active Lifetime Pro license for it, we send your HermoPDF key to that address.</p>
+        <label for="recover-email">Your e-mail address
+          <input class="input" id="recover-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@example.com">
+        </label>
+        <div><button class="btn btn-primary" type="submit">E-mail my license</button></div>
+        <p class="status" id="recover-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="note">
+      <p><strong>For your privacy:</strong> we never say whether a license exists for an address; you always see the same message. If no e-mail arrives, check your spam folder.</p>
+      <p>Still nothing? Write to <a href="mailto:{{cfg:contactEmail}}">{{cfg:contactEmail}}</a> and include the purchase e-mail you received from Freemius.</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,103 @@
+<!--meta
+{
+  "title": "Compress PDF to 1 MB Offline, No Upload | HermoPDF",
+  "ogTitle": "PDF too big to email or upload? Type the size it needs.",
+  "description": "Compress a PDF to 1 MB, 500 KB or 200 KB on your own PC. Type the target size and the app finds the settings. No upload, no watermark, free for Windows."
+}
+-->
+<section class="hero hero-sm">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Compress PDF to a target size · offline</span>
+      <h1>PDF <span class="hl">too big</span> to email or upload?</h1>
+      <p class="lead"><strong>Type the size you need; the document shrinks on your own computer, without being uploaded to a website.</strong> The app starts with the lightest setting and stops at the first one that fits.</p>
+      <div class="actions">
+        <a class="btn btn-primary btn-lg btn-stack" href="{{url:download}}" data-gc="compress-download">{{t:ctaDownload}}<span class="sub">{{t:ctaDownloadSub}}</span></a>
+        <a class="btn btn-ghost btn-lg" href="#how">How does it work?</a>
+      </div>
+      <ul class="pill-row" aria-label="In short">
+        <li class="pill">No upload</li>
+        <li class="pill">No watermark</li>
+        <li class="pill">No daily limit</li>
+      </ul>
+    </div>
+    <div>{{shot:kucultme-dialog>kucultme-hedef|The HermoPDF compress window (interface in Turkish): current size 635.7 KB, 0.2 typed in the "target size (MB)" box, and one-click 1 MB, 2 MB, 5 MB, 10 MB (email) and 50% buttons}}</div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="scene">
+  <div class="wrap narrow">
+    <span class="eyebrow">A familiar scene</span>
+    <h2 id="scene">Deadline day, one error message</h2>
+    <p>The last step of your application: <em>"Maximum file size is 1 MB."</em> Yours is bigger. And most "compress PDF" sites want your diploma or passport on their server.</p>
+    <p>Size limits are everywhere: email providers cap attachments per message (Gmail, for example, at 25 MB, and encoding uses up part of that), while job, school and visa application forms, exam registrations and tender systems often allow only a few MB per file, sometimes less. Scanned pages are the usual reason a PDF is too big, because each page is stored as an image.</p>
+    <div class="okbox">
+      <p><strong>In HermoPDF:</strong> open the document, click <strong>Compress</strong>, type <strong>1</strong>. The app does the rest; no internet needed.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how" aria-labelledby="how-title">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">How does it work?</span>
+      <h2 id="how-title">Four steps, no guesswork</h2>
+      <ol class="steps">
+        <li><b>Open the PDF, click Compress.</b>Tools tab ("Araçlar"), "Boyut" (Size) group.</li>
+        <li><b>Type the target in MB.</b>1, 2, 5 and 10 MB are one click; type <code>0.5</code> for 500 KB, <code>0.2</code> for about 200 KB.</li>
+        <li><b>The app steps through the levels.</b>Text stays as it is; images are compressed from about 220 DPI down to 72 DPI. It stops once the target is reached.</li>
+        <li><b>See before / after.</b>The smaller copy is a new file; your original stays untouched.</li>
+      </ol>
+    </div>
+    <div>
+      {{shot:kucultme-sonuc|The compression result window: file size before and after side by side, the percentage saved and where the file was saved}}
+      {{numbers}}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="honest">
+  <div class="wrap narrow">
+    <span class="eyebrow">Honest notes</span>
+    <h2 id="honest">Three things you should know</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1. A very small target can hurt readability</h3>
+        <p>Squeezing a scan down to 200 KB can blur the text. After saving, zoom in and check; if needed, try a slightly bigger target.</p>
+      </div>
+      <div class="card">
+        <h3>2. The target cannot always be reached</h3>
+        <p>The app says so plainly and gives you the smallest size it managed.</p>
+      </div>
+      <div class="card">
+        <h3>3. Check the limit where you upload</h3>
+        <p>Some count each file, some the total. Leave a margin: for a 2 MB limit, type 1.8.</p>
+      </div>
+    </div>
+    <p class="small muted mt-1">As a last resort, "scan mode" turns pages into images: text stays selectable, links may be lost. If links matter, untick that permission.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="extra">
+  <div class="wrap">
+    <div class="section-head"><h2 id="extra">Squeezing out a bit more</h2></div>
+    <div class="grid grid-3">
+      <div class="card"><span class="ico">{{> ico-shrink}}</span><h3>Greyscale</h3><p>No colour needed? Convert images to greyscale.</p></div>
+      <div class="card"><span class="ico">{{> ico-pages}}</span><h3>Metadata clean-up</h3><p>Embedded thumbnails are removed. On by default.</p></div>
+      <div class="card"><span class="ico">{{> ico-batch}}</span><h3>Lots of files?</h3><p>Use <a href="{{url:batch}}">batch processing</a> to apply one target to all.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="compress-faq">
+  <div class="wrap narrow">
+    <h2 id="compress-faq">Questions about compressing PDFs</h2>
+    <details class="faq"><summary>How do I compress a PDF to under 1 MB?</summary><div class="faq-a"><p>Open the file, click <strong>Compress</strong> on the Tools tab, type <code>1</code> (or click "1 MB") and confirm. The result is saved as a new file.</p></div></details>
+    <details class="faq"><summary>Can I compress a PDF to 200 KB or 500 KB?</summary><div class="faq-a"><p>Yes: type <code>0.5</code> for 500 KB or <code>0.2</code> for about 200 KB. With targets this small, check readability.</p></div></details>
+    <details class="faq"><summary>Is my file uploaded anywhere?</summary><div class="faq-a"><p>No. Compression runs entirely on your computer, even with the internet off.</p></div></details>
+    <details class="faq"><summary>Is it paid? Does it add a watermark?</summary><div class="faq-a"><p>No. It is in the free version; no watermark, no daily or file limit.</p></div></details>
+    <details class="faq"><summary>Can I merge several documents and then compress them?</summary><div class="faq-a"><p>Yes: <strong>Merge</strong> first, then <strong>Compress</strong>. For many files, <a href="{{url:batch}}">batch processing</a> applies the same target to all.</p></div></details>
+  </div>
+</section>
+
+{{> cta}}

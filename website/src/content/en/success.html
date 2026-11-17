@@ -1,0 +1,58 @@
+<!--meta
+{
+  "title": "Purchase Complete | HermoPDF",
+  "description": "Thank you! Your HermoPDF Lifetime Pro license key is here. Copy the key or download the license file, then activate it in the app."
+}
+-->
+<section class="page-head">
+  <div class="wrap narrow center">
+    <span class="eyebrow">Thank you</span>
+    <h1>Welcome to Pro!</h1>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap narrow">
+    <p class="warn" id="claim-demo" hidden></p>
+    <div class="card" id="claim" data-auto aria-live="polite">
+      <div id="claim-wait">
+        <p><span class="spinner" aria-hidden="true"></span> <span id="claim-wait-text">Preparing your HermoPDF license key…</span></p>
+        <noscript><p>JavaScript is needed to show your key. Without it, write to <a href="mailto:{{cfg:contactEmail}}">{{cfg:contactEmail}}</a>.</p></noscript>
+      </div>
+
+      <form class="form" id="claim-form" hidden novalidate>
+        <p class="status" id="claim-form-msg" role="status"></p>
+        <label for="claim-fskey">Your Freemius license key
+          <input class="input" id="claim-fskey" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+        </label>
+        <p class="small muted">Freemius, who processed your payment, gives you this key; check the e-mails Freemius sent you after the purchase. The Freemius key does not work in HermoPDF directly; here it is turned into your HermoPDF key. We do not store the Freemius key itself.</p>
+        <div><button class="btn btn-primary" type="submit">Show my HermoPDF key</button></div>
+      </form>
+
+      <div id="claim-ok" hidden tabindex="-1">
+        <h2 class="h3">Your HermoPDF license key is ready</h2>
+        <div class="warn"><p><strong>Save the key now.</strong> Copy it or download the license file and keep it somewhere safe. If you lose it, you can get it again with your Freemius key on the <a href="{{url:recover}}">Lost my license</a> page.</p></div>
+        <div class="key-box" id="claim-key"></div>
+        <div class="copy-row">
+          <button class="btn btn-primary" type="button" data-copy="claim-key">Copy key</button>
+          <a class="btn btn-ghost" id="claim-dl" href="#" download>Download license file</a>
+        </div>
+        <p class="small muted mt-1">File name: <code id="claim-file-name">hermopdf-pro.hermopdflicense</code></p>
+        <p class="small muted" id="claim-email-row" hidden>The key is tied to this e-mail address: <strong id="claim-email"></strong></p>
+      </div>
+    </div>
+    <p class="small muted mt-1">Something wrong? Write to <a href="mailto:{{cfg:contactEmail}}">{{cfg:contactEmail}}</a>.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="activate">
+  <div class="wrap narrow">
+    <h2 id="activate">Activate it in the app</h2>
+    <ol class="steps">
+      <li><b>Open HermoPDF.</b>Not installed? <a href="{{url:download}}">Download it here</a>.</li>
+      <li><b>Open the license window.</b>Click the crown <strong>Pro</strong> button at the right of the tabs, then <strong>Lisansım var</strong> (I have a license).</li>
+      <li><b>Paste the key or pick the file.</b>Paste your HermoPDF key (it starts with <code>UPRO1.</code>), or use <strong>Dosyadan yükle</strong> (Load from file) to pick the <code>.hermopdflicense</code> file, then click <strong>Etkinleştir</strong> (Activate). No internet needed.</li>
+    </ol>
+    <p class="small muted">Your e-mail address is written inside the key; do not share it publicly. If anything goes wrong, <a href="{{url:support}}">write to us</a>. You have a <a href="{{url:refund}}">14-day unconditional refund</a>.</p>
+  </div>
+</section>

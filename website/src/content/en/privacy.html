@@ -1,0 +1,90 @@
+<!--meta
+{
+  "title": "Privacy Policy | HermoPDF",
+  "description": "What data do the HermoPDF app and website process? Documents stay on your PC, no telemetry. Details on the update check, purchases and the Claude connection."
+}
+-->
+<section class="page-head">
+  <div class="wrap narrow">
+    <span class="eyebrow">Legal</span>
+    <h1>Privacy policy</h1>
+    <p class="muted">Last updated: {{cfg:legalUpdated.en}}</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap narrow prose">
+    <p class="draft">{{t:draftLegal}}</p>
+
+    <div class="okbox">
+      <h2>In short</h2>
+      <ul>
+        <li>Normal PDF work (opening, editing, compressing, OCR, converting) happens on your computer, and we do not receive your documents. If you turn on an optional online feature such as the Claude connection, the data that feature uses leaves your computer as described below.</li>
+        <li>No telemetry or analytics in the app. No account.</li>
+        <li>The app only goes online if you turn on the optional update check. If you turn on the Claude connection, whatever Claude reads goes to Anthropic inside your own Claude conversation.</li>
+        <li>If you buy Pro, our license server stores only your e-mail, Freemius reference numbers, your license number, the license status and timestamps. It does not store your name, address, card details or IP address.</li>
+        <li>The website uses no cookies; for visit statistics we use cookieless GoatCounter. The app itself has no analytics.</li>
+      </ul>
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>HermoPDF is developed under the NorthLightPixels brand by {{cfg:owner.legalName}} ({{cfg:owner.address}}). "We" in this policy means this person. For any privacy question: <a href="mailto:{{cfg:contactEmail}}">{{cfg:contactEmail}}</a></p>
+
+    <h2>2. The HermoPDF app</h2>
+    <h3>2.1 Your documents</h3>
+    <p>All documents you open, edit, compress, OCR or convert are processed on your computer only. Document contents, file names and the actions you take are not sent to us. If conversion with Microsoft Word is used, it happens locally with the Word installed on your computer.</p>
+    <h3>2.2 No telemetry</h3>
+    <p>The app contains no component that collects usage statistics, crash reports or analytics. You do not need an account to use it.</p>
+    <h3>2.3 Stored on your computer</h3>
+    <p>Your settings, any signatures and initials you choose to save, the recent files list and (if you have one) your Pro license key are stored only in the app's folder on your computer. They are not sent to us.</p>
+    <h3>2.4 Optional update check</h3>
+    <p>On the start screen you are asked once whether you want to check for updates. If you agree, the app downloads a small, digitally signed file from our site <strong>at most once a day</strong>. The file contains the latest version number, its date, the download page, a SHA-256 checksum and short release notes. No account, document or identity data is sent. However, as with any web request, your <strong>IP address</strong> and the <strong>app version</strong> (in standard headers) reach the server. If you decline, the app never goes online for this check.</p>
+    <h3>2.5 Pro users: revocation list</h3>
+    <p>If you have a Pro license and enabled the update check, the same check also downloads a signed list of refunded or charged-back licenses <strong>at most once a week</strong>. Your license key and e-mail are not sent; the comparison happens on your computer. License activation itself needs no internet connection.</p>
+
+    <h2>3. Claude connection (optional)</h2>
+    <p>The Claude connection is <strong>off by default</strong>. If you turn it on, Claude Desktop connects to HermoPDF through a local server (MCP) running on your computer. Whatever Claude reads through this connection (page text, page images, search results, document names) <strong>goes to Anthropic inside your own Claude conversation</strong> and is subject to your Claude account terms. This data does not come to us. Claude cannot overwrite your files or apply redactions; those need your confirmation in the app. The connection is free, but Claude usage counts against your own Claude plan. See Anthropic's privacy policy for how Anthropic processes data.</p>
+
+    <h2>4. This website</h2>
+    <h3>4.1 Visit statistics (GoatCounter)</h3>
+    <p>To understand which pages are read, we use <a href="https://www.goatcounter.com/" rel="noopener">GoatCounter</a>. According to GoatCounter, it uses no cookies and no persistent user identifier. Aggregate information such as page path, referring site, browser type, screen size and rough location (country) is recorded. Our site never sends the query part of the address (for example a transaction ID) to GoatCounter, only the page path. We also count clicks on the "Download" and "Buy" buttons.</p>
+    <h3>4.2 Cookies</h3>
+    <p>Our site sets no cookies of its own. Freemius's checkout script is loaded on the pricing page only, and only once purchasing is open; loading it contacts Freemius, so your IP address reaches Freemius. When you open the checkout, Freemius may use its own cookies or similar technologies. All of this falls under Freemius's own policy. Freemius is not loaded on any other page.</p>
+    <h3>4.3 Hosting and downloads</h3>
+    <p>The site is hosted on Cloudflare. Like any website host, Cloudflare may process technical connection data (such as IP addresses) for security and operation. Installers are served from this site (hermopdf.com) through Cloudflare.</p>
+
+    <h2>5. Buying Lifetime Pro</h2>
+    <h3>5.1 Payment: Freemius</h3>
+    <p>Sales are made through <strong>Freemius</strong>, which acts as Merchant of Record. Payment data such as card details and billing details is collected by Freemius and processed under its own privacy policy. We never see your card details.</p>
+    <h3>5.2 What our license server stores</h3>
+    <p>To create and deliver your license, resend it if you lose it and process refunds, our license server stores <strong>only</strong>:</p>
+    <ul>
+      <li>your e-mail address,</li>
+      <li>Freemius transaction and customer IDs,</li>
+      <li>the license number and the ID of the key that signed it,</li>
+      <li>the license status (active or revoked) and the kind of event that last changed it (e.g. refund),</li>
+      <li>related timestamps.</li>
+    </ul>
+    <p>In addition, so that the same payment notification is never processed twice, we keep Freemius's notification IDs, and for refunds and chargebacks their ID, type, status and time (no amounts). We do not store the license key itself; when needed, we regenerate it from the details above.</p>
+    <p>To prevent abuse, we limit how often licenses can be claimed or recovered. For this we do not store your IP address or e-mail in plain text; only a short hash derived from them is kept with a counter, for about a day at most. E-mail addresses are not written to the server logs. The license server also runs on Cloudflare, which, as with any web request, may process technical connection data (such as IP addresses) for security and operation.</p>
+    <p><strong>Note:</strong> your e-mail address is written inside your license key; this is what lets the app verify the license offline. If you share your key, your e-mail address is visible too.</p>
+    <h3>5.3 E-mail</h3>
+    <p>Your license e-mail (sent once after purchase) and any "lost my license" e-mails are sent through the transactional e-mail service <strong>Resend</strong>, using its Tokyo (ap-northeast-1) region. Resend processes only your e-mail address and the license details inside the message. These e-mails are only about your license; we do not send marketing e-mails. Separately, Freemius may send its own receipt and account e-mails to you.</p>
+    <h3>5.4 Retention</h3>
+    <p>We keep license records for as long as the license is valid and for as long as legal obligations require. If you want your record deleted, write to us; note that after deletion we can no longer resend your license.</p>
+
+    <h2>6. Service providers (sub-processors)</h2>
+    <p>We rely on these third parties to run the purchase and license flow. Each handles only what is needed for its role:</p>
+    <ul>
+      <li><strong>Freemius, Inc.</strong>: payment, as Merchant of Record; also issues receipts and may create an account for the buyer on its own platform.</li>
+      <li><strong>Resend</strong>: delivers the license e-mail (Tokyo, ap-northeast-1); sees your e-mail address and the license details in the message.</li>
+      <li><strong>Cloudflare</strong>: hosts this website and runs the license server (Workers) and its database (D1).</li>
+    </ul>
+
+    <h2>7. Your rights</h2>
+    <p>To find out what data we process about you, to ask for it to be corrected or deleted, or to exercise your other rights under applicable data protection law, write to <a href="mailto:{{cfg:contactEmail}}">{{cfg:contactEmail}}</a>.</p>
+
+    <h2>8. Changes</h2>
+    <p>If we change this policy, we update the "Last updated" date on this page. Any change to the app's network behaviour will also be stated clearly in the release notes.</p>
+  </div>
+</section>

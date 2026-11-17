@@ -1,0 +1,36 @@
+<!--meta
+{
+  "title": "PDF Karartma Programı: Yazı Gerçekten Silinir | HermoPDF",
+  "description": "Siyah kutu yetmez. HermoPDF'te karattığın TC kimlik no, IBAN ya da adres dosyadan kaldırılır, yalnız üstü örtülmez."
+}
+-->
+<section class="hero hero-sm">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Gerçek karartma (redaksiyon)</span>
+      <h1>Siyah kutu <span class="hl">yetmez.</span></h1>
+      <p class="lead">Yazının üstüne siyah kutu çizmek onu gizlemez; altındaki metin çoğu zaman hâlâ seçilir ve aranır. HermoPDF işaretlediğin içeriği dosyadan <strong>gerçekten siler</strong>.</p>
+      <div class="actions"><a class="btn btn-primary btn-lg" href="{{url:download}}" data-gc="redact-download">{{t:ctaDownload}}</a></div>
+    </div>
+    <div>{{shot:karartma>karartma-yakin|Karartma için işaretlenmiş alanlar ve üstte "karartma için işaretlendi" uyarı çubuğuyla "Karartmayı uygula" düğmesi}}</div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="karart-nasil">
+  <div class="wrap narrow">
+    <h2 id="karart-nasil">Nasıl çalışır?</h2>
+    <ol class="steps">
+      <li><b>Gizlenecek alanları işaretle.</b>TC kimlik no, IBAN, adres, imza… İşaretler önce yalnız işarettir; geri alabilirsin.</li>
+      <li><b>"Karartmayı uygula"ya bas.</b>Onayından sonra sayfalar yüksek çözünürlüklü (200 DPI) görüntüye çevrilir, işaretli alan siyaha boyanır, oradaki yazı dosyadan atılır. Diğer yazılar seçilebilir kalır.</li>
+      <li><b>Kopyayı paylaş.</b>Karartılmış belgeyi yeni adla kaydet; orijinal sende kalsın.</li>
+    </ol>
+    <div class="okbox">
+      <p><strong>Kendin dene:</strong> kaydettikten sonra karartılan yerdeki yazıyı seçmeyi ya da aramayı dene. Bulamazsın, çünkü artık orada değil.</p>
+    </div>
+    <div class="warn mt-2">
+      <p><strong>Dürüst not:</strong> Karartma kaydedildikten sonra o dosyada geri alınamaz; paylaşmadan önce sonucu kontrol et. Karartılan sayfa görüntüye döndüğü için bağlantılar kaybolabilir ve dosya biraz büyüyebilir. Kutuyu yazının tamamını kapsayacak şekilde çiz.</p>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

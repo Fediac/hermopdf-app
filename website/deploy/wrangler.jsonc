@@ -1,0 +1,15 @@
+{
+  // HermoPDF ana site (hermopdf.com). `node build.mjs` önce çalıştırılır; dist -> assets.
+  // Yayın: cd website/deploy && npx wrangler deploy   (kullanıcı onayıyla)
+  "name": "hermopdf-site",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": false,
+  "assets": { "directory": "../dist", "binding": "ASSETS", "run_worker_first": ["/download/*", "/*"] },
+  "r2_buckets": [{ "binding": "DOWNLOADS", "bucket_name": "hermopdf-downloads" }],
+  "routes": [
+    { "pattern": "hermopdf.com", "custom_domain": true },
+    { "pattern": "www.hermopdf.com", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}

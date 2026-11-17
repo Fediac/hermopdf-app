@@ -1,0 +1,47 @@
+<!--meta
+{
+  "title": "Word to PDF Converter Offline (Dual Engine) | HermoPDF",
+  "description": "Convert Word documents to PDF using Microsoft Word's own engine if installed, or a built-in engine if not. PDF to Word is included too."
+}
+-->
+<section class="page-head">
+  <div class="wrap narrow">
+    <span class="eyebrow">Word → PDF</span>
+    <h1>Your Word document as a PDF, <span class="hl">intact</span></h1>
+    <p class="lead">Two engines keep images in place and fonts unchanged.</p>
+    <div class="actions"><a class="btn btn-primary btn-lg" href="{{url:download}}" data-gc="word-download">{{t:ctaDownload}}</a></div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div class="grid grid-2">
+      <div class="card">
+        <span class="ico">{{> ico-word}}</span>
+        <h2 class="h3">1. If Microsoft Word is installed</h2>
+        <p>Word's own PDF engine is used; the result matches "Save as PDF" in Word. .doc, .docx and other formats Word can open are supported.</p>
+        <p class="small muted">Your open Word windows are left alone.</p>
+      </div>
+      <div class="card">
+        <span class="ico">{{> ico-pages}}</span>
+        <h2 class="h3">2. If Word is not installed</h2>
+        <p>The built-in engine converts .docx documents to PDF directly. No Office needed.</p>
+        <p class="small muted">It works with the .docx family (.docx, .docm, .dotx). Complex layouts may not be as exact as with Word.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="reverse">
+  <div class="wrap narrow">
+    <h2 id="reverse">The other direction, too</h2>
+    <ul class="checklist">
+      <li><strong>PDF → Word (.docx):</strong> make the text editable. For scans, run <a href="{{url:ocr}}">OCR</a> first.</li>
+      <li><strong>PDF → images:</strong> save pages as PNG or JPEG.</li>
+      <li><strong>Images → PDF:</strong> collect photos and scans into one PDF.</li>
+      <li><strong>Text → PDF:</strong> turn a plain text file into a PDF.</li>
+    </ul>
+  </div>
+</section>
+
+{{> cta}}

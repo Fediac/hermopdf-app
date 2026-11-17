@@ -1,0 +1,128 @@
+<!--meta
+{
+  "title": "Бесплатный офлайн-редактор PDF для Windows, без аккаунта | HermoPDF",
+  "ogTitle": "HermoPDF: ваши PDF принадлежат вам.",
+  "description": "Редактируйте, подписывайте, объединяйте и сжимайте PDF до 1 MB бесплатно на своём ПК. OCR и пакетная обработка — в Pro. Без аккаунта, рекламы и подписки."
+}
+-->
+<section class="sky" id="hermes" aria-labelledby="sky-title" {{> hermes-data}}>
+  {{> hermes-stage}}
+  <div class="wrap sky-inner">
+    <div class="sky-top">
+      <div class="sky-text">
+        <span class="eyebrow">Бесплатный редактор PDF для Windows</span>
+        <h1 id="sky-title">Ваши PDF <span class="hl">принадлежат вам.</span></h1>
+        <p class="lead"><strong>Без подписки. Без рекламы. Работа с PDF происходит на вашем компьютере.</strong></p>
+      </div>
+      <div class="sky-cta">
+        <a class="btn btn-primary btn-lg btn-stack sky-dl" href="{{dlhref}}" data-gc="hero-download">{{t:ctaDownload}}<span class="sub">{{t:ctaDownloadSub}}</span></a>
+      </div>
+    </div>
+    <div class="sky-more">
+      <ul class="pill-row" aria-label="Коротко">
+        <li class="pill">Без аккаунта</li>
+        <li class="pill">Без карты</li>
+        <li class="pill">Без рекламы</li>
+        <li class="pill">Без водяных знаков</li>
+        <li class="pill">Открытый код</li>
+      </ul>
+      <p class="hero-meta">Версия {{cfg:release.version}} · Windows 10 / 11 (64-бит) · Работает офлайн · Интерфейс приложения: турецкий · <a href="{{url:download}}">Установить и проверить</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section hook-sec" aria-labelledby="hook-title">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Сжатие до нужного размера</span>
+      <h2 id="hook-title">«Файл слишком большой» для письма или формы загрузки?</h2>
+      <p class="lead">У вложений в письмах, анкет и систем для экзаменов или тендеров есть ограничения по размеру. Введите лимит и уменьшите PDF на своём компьютере. Без загрузки на сервер, без очереди.</p>
+      <div class="actions"><a class="btn btn-ghost" href="{{url:compress}}">Сжатие до нужного размера →</a></div>
+    </div>
+    <div class="hero-art">
+      {{sizedemo}}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Что можно делать?</span>
+      <h2 id="features-title">Все повседневные задачи с PDF в одной программе</h2>
+      <p class="lead">Повседневная работа с PDF бесплатна, без дневного лимита и лимита страниц. OCR и пакетная обработка входят в Pro.</p>
+    </div>
+    <div class="grid grid-4 feat-grid">
+      <a class="card card-link" href="{{url:compress}}"><span class="ico">{{> ico-shrink}}</span><h3>Сжатие до нужного размера</h3><p>Введите лимит, а приложение само найдёт подходящий режим.</p><span class="more">Сжать PDF →</span></a>
+      <a class="card card-link" href="{{url:edit}}"><span class="ico">{{> ico-edit}}</span><h3>Редактирование</h3><p>Исправляйте текст, добавляйте текст, изображения и заметки.</p><span class="more">Редактирование →</span></a>
+      <a class="card card-link" href="{{url:ocr}}"><span class="ico">{{> ico-ocr}}</span><h3>OCR <span class="tag tag-pro">Pro</span></h3><p>Превращайте сканы в страницы с текстом, по которому работает поиск.</p><span class="more">OCR →</span></a>
+      <a class="card card-link" href="{{url:sign}}"><span class="ico">{{> ico-sign}}</span><h3>Подпись</h3><p>Нарисуйте один раз и ставьте на любой документ в один клик.</p><span class="more">Подпись →</span></a>
+      <a class="card card-link" href="{{url:redact}}"><span class="ico">{{> ico-redact}}</span><h3>Настоящее скрытие данных</h3><p>Номера документов, IBAN… Скрытый текст удаляется из файла.</p><span class="more">Скрытие данных →</span></a>
+      <a class="card card-link" href="{{url:batch}}"><span class="ico">{{> ico-batch}}</span><h3>Пакетная обработка <span class="tag tag-pro">Pro</span></h3><p>Водяной знак, нумерация или сжатие десятков файлов сразу.</p><span class="more">Пакетная обработка →</span></a>
+      <a class="card card-link" href="{{url:word}}"><span class="ico">{{> ico-word}}</span><h3>Word → PDF</h3><p>Использует Word, если он установлен, иначе встроенный движок.</p><span class="more">Word → PDF →</span></a>
+      <a class="card card-link" href="{{url:claude}}"><span class="ico">{{> ico-claude}}</span><h3>Подключение Claude</h3><p>Включайте, если хотите; по умолчанию выключено.</p><span class="more">Как это работает →</span></a>
+    </div>
+    <div class="note mt-2">
+      <p><strong>Также:</strong> объединение, разделение, перестановка, поворот и удаление страниц · пароли · заполнение форм · изображения в PDF · PDF в Word и изображения · печать.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="compress-title">
+  <div class="wrap split split-shot">
+    <div>
+      <span class="eyebrow">Главная возможность</span>
+      <h2 id="compress-title">Сжатие до нужного размера за 3 шага</h2>
+      <ol class="steps">
+        <li><b>Откройте PDF и нажмите «Сжать».</b></li>
+        <li><b>Введите нужный размер.</b>1, 2, 5 и 10 MB выбираются в один клик; для 500 KB введите 0,5.</li>
+        <li><b>Посмотрите размер до и после.</b>Оригинал остаётся нетронутым.</li>
+      </ol>
+      <p><a href="{{url:compress}}">Как это работает? →</a></p>
+    </div>
+    <div>
+      {{demo:kucultme|kucultme-dialog>kucultme-hedef|Окно сжатия HermoPDF (интерфейс на турецком): текущий размер 635,7 KB, в поле целевого размера введено 0,2, кнопки в один клик: 1 MB, 2 MB, 5 MB, 10 MB (почта) и 50%|Окно сжатия в самом приложении (интерфейс на турецком).}}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="compare-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Честное сравнение</span>
+      <h2 id="compare-title">Что вам нужно? Что предлагают другие? Что делаем мы?</h2>
+    </div>
+    <div class="ask-list">
+      <div class="ask-head" aria-hidden="true"><div>Что вам нужно?</div><div>Что предлагают другие?</div><div class="us">Что делаем мы?</div></div>
+      <div class="ask"><div><span class="ask-h">Что вам нужно?</span><p>Редактировать и подписывать без подписки.</p></div><div><span class="ask-h">Что предлагают другие?</span><p>Adobe Acrobat Standard: от US$14,99 в месяц в США (годовой тариф).</p></div><div class="us"><span class="ask-h">Что делаем мы?</span><p>Редактирование и подпись бесплатны. Pro оплачивается один раз.</p></div></div>
+      <div class="ask"><div><span class="ask-h">Что вам нужно?</span><p>Уложиться в ограничение размера для письма или формы загрузки.</p></div><div><span class="ask-h">Что предлагают другие?</span><p>Выбрать уровень и пробовать заново, пока файл не поместится.</p></div><div class="us"><span class="ask-h">Что делаем мы?</span><p>Вы вводите нужный размер, а приложение останавливается на первом подходящем режиме.</p></div></div>
+      <div class="ask"><div><span class="ask-h">Что вам нужно?</span><p>Бесплатную офлайн-программу.</p></div><div><span class="ask-h">Что предлагают другие?</span><p>PDF24 Creator и KillerPDF тоже такие; оба хороши.</p></div><div class="us"><span class="ask-h">Что делаем мы?</span><p>Сжатие до нужного размера, интерфейс в первую очередь для турецкоязычных пользователей, Word → PDF на двух движках. OCR и пакетная обработка — в Pro.</p></div></div>
+    </div>
+    <p class="small muted mt-1">Сведения о конкурентах взяты с официальных страниц {{date:compareDate}}; они могут измениться. <a href="{{url:compare}}">Полное сравнение с источниками →</a></p>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="model-title">
+  <div class="wrap">
+    <div class="grid grid-2 items-center">
+      <div>
+        <span class="eyebrow">Бизнес-модель простыми словами</span>
+        <h2 id="model-title">Повседневная работа с PDF бесплатна.</h2>
+        <p>Чтение, редактирование, сжатие до нужного размера, объединение, разделение, подпись и базовые преобразования бесплатны. Если захотите, разовая покупка <strong>Lifetime Pro</strong> добавит <strong>OCR, пакетную обработку и сохранённые сценарии</strong> и поддержит разработку.</p>
+        <div class="actions"><a class="btn btn-ghost" href="{{url:pricing}}">Сравнить бесплатную версию и Pro</a></div>
+      </div>
+      <div class="card">
+        <h3>Почему ему можно доверять</h3>
+        <ul class="checklist">
+          <li>Открытый исходный код (GPL-3.0).</li>
+          <li>Без телеметрии; проверка обновлений включается по желанию.</li>
+          <li>Активация лицензии работает офлайн.</li>
+          <li>Контрольная сумма SHA-256 каждого выпуска есть на странице загрузки.</li>
+        </ul>
+        <p class="small"><a href="{{url:privacy}}">Политика конфиденциальности</a> · <a href="{{url:opensource}}">Открытый код &amp; лицензия</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

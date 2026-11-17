@@ -1,0 +1,39 @@
+<!--meta
+{
+  "title": "OCR Scanned PDF Offline: Copy Text from Scans | HermoPDF",
+  "description": "Make a scanned PDF searchable and copy text from it. English and Turkish OCR runs offline on your PC. Part of HermoPDF Lifetime Pro."
+}
+-->
+<section class="hero hero-sm">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">OCR · offline · Pro</span>
+      <h1>Turn scanned pages into <span class="hl">searchable text</span></h1>
+      <p class="lead">A scanned PDF is really just a picture. OCR recognises the text so you can search, select and copy it.</p>
+      <div class="actions"><a class="btn btn-primary btn-lg" href="{{url:download}}" data-gc="ocr-download">{{t:ctaDownload}}</a><a class="btn btn-ghost btn-lg" href="{{url:pricing}}">{{t:ctaPro}}</a></div>
+    </div>
+    <div>{{shot:ocr-sonuc>ocr-sonuc-yakin|Searching a scanned order document after OCR: the searched number is found and highlighted on the page}}</div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="ocr-how">
+  <div class="wrap narrow">
+    <h2 id="ocr-how">How to do it</h2>
+    <ol class="steps">
+      <li><b>Open the scanned PDF.</b>If there is no selectable text, the app offers OCR.</li>
+      <li><b>Tools → OCR.</b>Choose the language: Turkish + English (default), Turkish only or English only.</li>
+      <li><b>Wait, then use it.</b>The text is added as an invisible layer. Search and copy it, or turn it into editable text with <strong>PDF → Word</strong>.</li>
+    </ol>
+    <div class="note">
+      <p><strong>Language data is included:</strong> the OCR language files ship with the app; nothing is downloaded.</p>
+    </div>
+    <div class="note mt-2">
+      <p><strong>OCR is a Pro feature.</strong> The free version opens scanned PDFs and tells you when a page needs OCR; running OCR (whole document, chosen pages or an area) needs <a href="{{url:pricing}}">Lifetime Pro</a>.</p>
+    </div>
+    <div class="warn mt-2">
+      <p><strong>Honest note:</strong> OCR is only as good as the scan. Skewed, blurry or handwritten pages may contain errors; check important documents by eye.</p>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

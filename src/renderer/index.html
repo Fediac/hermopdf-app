@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>HermoPDF</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' app:; script-src 'self' app: 'wasm-unsafe-eval' blob:; worker-src 'self' app: blob:; style-src 'self' app: 'unsafe-inline'; img-src 'self' app: data: blob:; font-src 'self' app: data:; connect-src 'self' app: data: blob:; media-src 'self' app: blob:">
+  <link rel="stylesheet" href="app://pu/node_modules/pdfjs-dist/web/pdf_viewer.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header id="titlebar">
+    <button id="appmenu-btn" class="appmenu-btn" title="Dosya menüsü" data-i18n-title="app.fileMenuTip">
+      <img src="app://pu/build/icon-64.png" alt="" class="logo">
+      <span data-i18n="app.fileMenu">Dosya</span>
+    </button>
+    <div id="doctabs" class="doctabs"></div>
+    <div class="titlebar-drag"></div>
+  </header>
+
+  <nav id="ribbon-tabs" class="ribbon-tabs"></nav>
+  <section id="ribbon" class="ribbon"></section>
+  <section id="optbar" class="optbar" hidden></section>
+
+  <main id="main">
+    <aside id="sidebar" class="sidebar" hidden>
+      <div class="sidebar-tabs">
+        <button data-side="thumbs" class="on" data-i18n="app.side.thumbs">Sayfalar</button>
+        <button data-side="outline" data-i18n="app.side.outline">İçindekiler</button>
+        <button data-side="objects" data-i18n="app.side.objects">Düzenlemeler</button>
+      </div>
+      <div class="sidebar-body" id="sidebar-body"></div>
+    </aside>
+    <section id="docs" class="docs">
+      <div id="start" class="start"></div>
+      <div id="findbar" class="findbar" hidden>
+        <input id="find-input" class="input" placeholder="Belgede ara…" data-i18n-placeholder="app.find.placeholder" spellcheck="false">
+        <span id="find-count" class="find-count"></span>
+        <button class="icon-btn" id="find-prev" title="Önceki (Shift+Enter)" data-i18n-title="app.find.prev"></button>
+        <button class="icon-btn" id="find-next" title="Sonraki (Enter)" data-i18n-title="app.find.next"></button>
+        <label class="chk"><input type="checkbox" id="find-case"> Aa</label>
+        <label class="chk"><input type="checkbox" id="find-word"> <span data-i18n="app.find.word">Tam kelime</span></label>
+        <button class="icon-btn" id="find-close" title="Kapat (Esc)" data-i18n-title="app.find.close"></button>
+      </div>
+      <div id="organizer" class="organizer" hidden></div>
+    </section>
+  </main>
+
+  <footer id="statusbar" class="statusbar">
+    <div class="sb-left">
+      <button class="icon-btn" id="sb-sidebar" title="Kenar çubuğu (F4)" data-i18n-title="app.sb.sidebar"></button>
+      <span id="sb-hint" class="sb-hint"></span>
+    </div>
+    <div class="sb-center" id="sb-nav">
+      <button class="icon-btn" id="nav-first" title="İlk sayfa (Home)" data-i18n-title="app.sb.first"></button>
+      <button class="icon-btn" id="nav-prev" title="Önceki sayfa" data-i18n-title="app.sb.prev"></button>
+      <input id="nav-page" class="input nav-page" value="0">
+      <span id="nav-total" class="nav-total">/ 0</span>
+      <button class="icon-btn" id="nav-next" title="Sonraki sayfa" data-i18n-title="app.sb.next"></button>
+      <button class="icon-btn" id="nav-last" title="Son sayfa (End)" data-i18n-title="app.sb.last"></button>
+    </div>
+    <div class="sb-right">
+      <span id="sb-size" class="sb-size"></span>
+      <button class="icon-btn" id="zoom-out" title="Uzaklaştır (Ctrl -)" data-i18n-title="app.sb.zoomOut"></button>
+      <button id="zoom-val" class="zoom-val" title="Yakınlaştırma" data-i18n-title="app.sb.zoom">100%</button>
+      <button class="icon-btn" id="zoom-in" title="Yakınlaştır (Ctrl +)" data-i18n-title="app.sb.zoomIn"></button>
+      <button class="icon-btn" id="settings-btn" title="Ayarlar" data-i18n-title="app.sb.settings"></button>
+      <button class="icon-btn" id="theme-btn" title="Açık / koyu tema" data-i18n-title="app.sb.theme"></button>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
