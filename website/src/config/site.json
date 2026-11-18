@@ -1,5 +1,5 @@
 {
-  "_note": "Tek yapılandırma yeri (bkz. website/README.md). İçinde PLACEHOLDER geçen bir değer kalırsa sitede 'Önizleme' şeridi görünür.",
+  "_note": "Tek yapılandırma yeri. PLACEHOLDER içeren değerleri yayından önce doldur (bkz. website/README.md).",
   "siteName": "HermoPDF",
   "siteUrl": "https://hermopdf.com",
   "apiBase": "https://api.hermopdf.com",
@@ -31,7 +31,7 @@
     "sizeMB": 134,
     "installedMB": 460,
     "sha256": "9bf3ec4f49efe6b93d8cf4bd1c4dd1578a355bf429facd556036f2f8b23f3fd0",
-    "virustotalUrl": ""
+    "virustotalUrl": "https://www.virustotal.com/gui/file/9bf3ec4f49efe6b93d8cf4bd1c4dd1578a355bf429facd556036f2f8b23f3fd0"
   },
   "owner": {
     "brand": "NorthLightPixels",
